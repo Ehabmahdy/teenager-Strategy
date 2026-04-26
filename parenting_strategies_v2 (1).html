@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parenting Teenagers — Complete Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream: #FAF7F2;
+  --warm-white: #FFFDF9;
+  --gold: #C9A84C;
+  --gold-light: #F0DFA0;
+  --gold-pale: #FBF5E0;
+  --deep-green: #1C3A2F;
+  --mid-green: #2D5944;
+  --soft-green: #4A8067;
+  --sage: #8BAF98;
+  --sage-pale: #E8F2EC;
+  --text-dark: #1A1A1A;
+  --text-mid: #4A4A4A;
+  --text-muted: #8A8A8A;
+  --border: rgba(201,168,76,0.2);
+  --border-strong: rgba(201,168,76,0.45);
+  --shadow: 0 4px 24px rgba(28,58,47,0.08);
+  --shadow-hover: 0 8px 40px rgba(28,58,47,0.14);
+  --red: #C0392B; --red-pale: #FDECEA;
+  --blue: #1A5E8A; --blue-pale: #E3EFF6;
+  --purple: #4B38A0; --purple-pale: #EDE8F8;
+  --orange: #8A4B0F; --orange-pale: #FBF0E2;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-dark);min-height:100vh;overflow-x:hidden;}
+body.rtl{direction:rtl;font-family:'Amiri',serif;}
+body.rtl .card-arrow{transform:rotate(180deg);}
+body.rtl .card.open .card-arrow{transform:rotate(270deg);}
+body.rtl .tip-bullet{margin-right:0;margin-left:8px;}
+
+/* ── HEADER ── */
+.site-header{background:var(--deep-green);position:sticky;top:0;z-index:200;border-bottom:1px solid rgba(201,168,76,0.3);}
+.header-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px;}
+.logo-wrap{display:flex;align-items:center;gap:10px;}
+.logo-text{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.15rem;}
+.logo-sub{font-size:11px;color:rgba(255,255,255,0.45);letter-spacing:0.06em;font-weight:300;}
+.header-right{display:flex;align-items:center;gap:10px;}
+.lang-switcher{display:flex;gap:4px;}
+.lang-btn{padding:5px 13px;border-radius:20px;border:1px solid rgba(201,168,76,0.35);background:transparent;color:rgba(255,255,255,0.55);font-size:13px;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif;}
+.lang-btn:hover{background:rgba(201,168,76,0.15);color:var(--gold);}
+.lang-btn.active{background:var(--gold);color:var(--deep-green);font-weight:500;border-color:var(--gold);}
+.dark-toggle{padding:5px 12px;border-radius:20px;border:1px solid rgba(255,255,255,0.2);background:transparent;color:rgba(255,255,255,0.5);font-size:12px;cursor:pointer;transition:all .2s;}
+.dark-toggle:hover{background:rgba(255,255,255,0.1);color:#fff;}
+
+/* ── DARK MODE ── */
+body.dark{--cream:#0F1A14;--warm-white:#162019;--text-dark:#F0EDE6;--text-mid:#B8B4AA;--text-muted:#6A6760;--border:rgba(201,168,76,0.18);--shadow:0 4px 24px rgba(0,0,0,0.3);--shadow-hover:0 8px 40px rgba(0,0,0,0.45);--sage-pale:#1A2E22;--gold-pale:#1E1A0A;}
+body.dark .card{background:#162019;}
+body.dark .checklist-wrap{background:#162019;}
+body.dark .do-box{background:#0D1F11;border-color:#1E4A28;}
+body.dark .dont-box{background:#200F0F;border-color:#4A1E1E;}
+body.dark .scenario-box{background:#162019;}
+body.dark .technique-card{background:#162019;}
+body.dark .journal-entry{background:#162019;}
+body.dark .planner-cell{background:#162019;}
+body.dark .assessment-wrap{background:#162019;}
+body.dark .age-card{background:#162019;}
+body.dark .tab-section{background:#162019;}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,var(--deep-green) 0%,var(--mid-green) 60%,#3A6B56 100%);padding:5rem 2rem 4rem;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23C9A84C' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
+.hero-badge{display:inline-block;background:rgba(201,168,76,0.2);border:1px solid rgba(201,168,76,0.4);color:var(--gold);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;padding:5px 18px;border-radius:20px;margin-bottom:1.4rem;font-weight:500;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,5vw,3rem);color:#fff;line-height:1.2;margin-bottom:.9rem;position:relative;}
+.hero h1 em{color:var(--gold);font-style:italic;}
+.hero p{color:rgba(255,255,255,0.62);font-size:1rem;max-width:560px;margin:0 auto 2.2rem;line-height:1.75;font-weight:300;}
+.hero-stats{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;position:relative;}
+.hero-stat{text-align:center;}
+.hero-stat .num{font-family:'Playfair Display',serif;font-size:1.9rem;color:var(--gold);display:block;}
+.hero-stat .lbl{font-size:11px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.09em;}
+
+/* ── MAIN NAV TABS ── */
+.main{max-width:1200px;margin:0 auto;padding:2.5rem 2rem 5rem;}
+.main-tabs{display:flex;gap:0;flex-wrap:wrap;margin-bottom:2.5rem;border-bottom:1.5px solid var(--border);overflow-x:auto;}
+.main-tab{padding:12px 22px;font-size:14px;font-weight:400;color:var(--text-muted);cursor:pointer;border:none;background:transparent;border-bottom:2.5px solid transparent;margin-bottom:-1.5px;white-space:nowrap;transition:all .2s;font-family:inherit;}
+.main-tab:hover{color:var(--deep-green);}
+.main-tab.active{color:var(--deep-green);font-weight:500;border-bottom-color:var(--gold);}
+body.dark .main-tab:hover{color:var(--gold);}
+body.dark .main-tab.active{color:var(--gold);}
+
+/* ── PANELS ── */
+.mpanel{display:none;}
+.mpanel.active{display:block;animation:fadeUp .3s ease;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+
+/* ── SECTION HEADER ── */
+.section-head{margin-bottom:1.8rem;}
+.section-title{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--deep-green);}
+body.dark .section-title{color:var(--gold-light);}
+.section-sub{color:var(--text-muted);font-size:.93rem;margin-top:6px;line-height:1.65;}
+
+/* ── PILLAR TABS (inside strategies panel) ── */
+.pillars{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:2rem;}
+.pillar-btn{display:flex;align-items:center;gap:7px;padding:9px 18px;border-radius:30px;border:1.5px solid var(--border);background:var(--warm-white);color:var(--text-mid);font-size:13.5px;font-weight:400;cursor:pointer;transition:all .2s;font-family:inherit;}
+.pillar-btn:hover{border-color:var(--gold);background:var(--gold-pale);}
+.pillar-btn.active{background:var(--deep-green);color:#fff;border-color:var(--deep-green);font-weight:500;}
+
+/* ── CARDS ── */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-bottom:2.5rem;}
+.card{background:var(--warm-white);border:1px solid var(--border);border-radius:16px;overflow:hidden;cursor:pointer;transition:box-shadow .25s,border-color .25s,transform .2s;}
+.card:hover{box-shadow:var(--shadow-hover);border-color:var(--gold);transform:translateY(-2px);}
+.card.open{border-color:var(--gold);box-shadow:var(--shadow-hover);}
+.card-head{display:flex;align-items:flex-start;justify-content:space-between;padding:1.15rem 1.4rem;gap:10px;}
+.card-tag{display:inline-block;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:12px;margin-bottom:7px;}
+.tag-connection{background:var(--blue-pale);color:var(--blue);}
+.tag-discipline{background:#E8F2EA;color:#1E6637;}
+.tag-emotional{background:var(--orange-pale);color:var(--orange);}
+.tag-islamic{background:var(--purple-pale);color:var(--purple);}
+.card-title-text{font-size:.97rem;font-weight:500;color:var(--text-dark);line-height:1.4;}
+.card-arrow{width:26px;height:26px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold);font-size:14px;transition:transform .25s,background .2s;margin-top:2px;}
+.card.open .card-arrow{transform:rotate(90deg);background:var(--gold-pale);}
+.card-body{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1);}
+.card.open .card-body{max-height:700px;border-top:1px solid var(--border);}
+.card-body-inner{padding:1.1rem 1.4rem 1.4rem;}
+.card-desc{font-size:13.5px;color:var(--text-mid);line-height:1.75;margin-bottom:.9rem;}
+.tips-list{list-style:none;margin-bottom:.9rem;}
+.tips-list li{font-size:13px;color:var(--text-mid);padding:5px 0 5px 18px;position:relative;line-height:1.55;border-bottom:1px solid rgba(0,0,0,0.04);}
+.tips-list li:last-child{border-bottom:none;}
+.tips-list li::before{content:'◆';position:absolute;left:0;color:var(--gold);font-size:7px;top:9px;}
+body.rtl .tips-list li{padding-left:0;padding-right:18px;}
+body.rtl .tips-list li::before{left:auto;right:0;}
+.do-dont-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px;}
+.do-box,.dont-box{border-radius:10px;padding:11px 13px;}
+.do-box{background:#EDF7F0;border:1px solid #B5DFC2;}
+.dont-box{background:#FDF0EF;border:1px solid #F5C0BD;}
+.do-box .box-label{font-size:11px;font-weight:600;color:#1E6637;text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px;}
+.dont-box .box-label{font-size:11px;font-weight:600;color:#B03030;text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px;}
+.do-box li,.dont-box li{font-size:12px;color:var(--text-mid);padding:3px 0 3px 15px;position:relative;line-height:1.5;list-style:none;}
+.do-box li::before{content:'✓';position:absolute;left:0;color:#1E6637;font-size:10px;}
+.dont-box li::before{content:'✗';position:absolute;left:0;color:#B03030;font-size:10px;}
+body.rtl .do-box li,.dont-box li{padding-left:0;padding-right:15px;}
+body.rtl .do-box li::before,.dont-box li::before{left:auto;right:0;}
+
+/* ── QUOTE STRIP ── */
+.quote-strip{background:var(--deep-green);border-radius:14px;padding:1.75rem 2rem;margin-bottom:2rem;display:flex;gap:1.25rem;align-items:center;}
+.quote-mark{font-family:'Playfair Display',serif;font-size:3.5rem;color:var(--gold);line-height:1;opacity:.55;flex-shrink:0;margin-top:-10px;}
+.quote-text{font-family:'Playfair Display',serif;font-style:italic;color:#fff;font-size:1rem;line-height:1.65;}
+.quote-source{font-size:11px;color:var(--sage);margin-top:5px;letter-spacing:.05em;font-style:normal;font-family:'DM Sans',sans-serif;}
+
+/* ── AGE STAGES ── */
+.age-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-bottom:2rem;}
+.age-card{background:var(--warm-white);border:1px solid var(--border);border-radius:16px;padding:1.4rem;transition:box-shadow .2s;}
+.age-card:hover{box-shadow:var(--shadow-hover);}
+.age-badge{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:.9rem;}
+.age-13{background:#DCEEFB;color:#0E4C7A;}
+.age-15{background:#E0F5E9;color:#155A2E;}
+.age-17{background:#F5ECD7;color:#7A4A0A;}
+.age-card h3{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--deep-green);margin-bottom:.6rem;}
+body.dark .age-card h3{color:var(--gold-light);}
+.age-card p{font-size:13px;color:var(--text-mid);line-height:1.65;margin-bottom:.8rem;}
+.age-traits{list-style:none;}
+.age-traits li{font-size:12.5px;color:var(--text-mid);padding:4px 0 4px 16px;position:relative;}
+.age-traits li::before{content:'→';position:absolute;left:0;color:var(--gold);font-size:11px;}
+body.rtl .age-traits li{padding-left:0;padding-right:16px;}
+body.rtl .age-traits li::before{left:auto;right:0;}
+
+/* ── TECHNIQUES LIBRARY ── */
+.techniques-filter{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:1.5rem;}
+.filter-btn{padding:6px 15px;border-radius:20px;border:1px solid var(--border);background:var(--warm-white);color:var(--text-mid);font-size:13px;cursor:pointer;transition:all .2s;font-family:inherit;}
+.filter-btn:hover{border-color:var(--gold);background:var(--gold-pale);}
+.filter-btn.active{background:var(--deep-green);color:#fff;border-color:var(--deep-green);}
+.techniques-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;}
+.technique-card{background:var(--warm-white);border:1px solid var(--border);border-radius:14px;padding:1.3rem;transition:box-shadow .2s,transform .2s;}
+.technique-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+.technique-card.hidden{display:none;}
+.tech-header{display:flex;align-items:flex-start;gap:12px;margin-bottom:.8rem;}
+.tech-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.tech-icon-conn{background:var(--blue-pale);}
+.tech-icon-disc{background:#E8F2EA;}
+.tech-icon-emot{background:var(--orange-pale);}
+.tech-icon-isl{background:var(--purple-pale);}
+.tech-name{font-size:.97rem;font-weight:500;color:var(--text-dark);line-height:1.35;}
+.tech-source{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.tech-desc{font-size:13px;color:var(--text-mid);line-height:1.65;margin-bottom:.8rem;}
+.tech-steps{list-style:none;}
+.tech-steps li{font-size:12.5px;color:var(--text-mid);padding:4px 0 4px 20px;position:relative;counter-increment:step;}
+.tech-steps li::before{content:counter(step);position:absolute;left:0;top:4px;width:15px;height:15px;background:var(--gold-pale);border-radius:50%;font-size:9px;font-weight:600;color:var(--gold);display:flex;align-items:center;justify-content:center;text-align:center;line-height:15px;}
+.tech-steps{counter-reset:step;}
+body.rtl .tech-steps li{padding-left:0;padding-right:20px;}
+body.rtl .tech-steps li::before{left:auto;right:0;}
+
+/* ── SCENARIO SIMULATOR ── */
+.scenario-selector{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:1.5rem;}
+.scenario-btn{padding:14px 16px;border-radius:12px;border:1px solid var(--border);background:var(--warm-white);cursor:pointer;text-align:left;transition:all .2s;font-family:inherit;}
+.scenario-btn:hover{border-color:var(--gold);background:var(--gold-pale);}
+.scenario-btn.active{border-color:var(--deep-green);background:var(--sage-pale);}
+.scenario-btn .scn-icon{font-size:22px;display:block;margin-bottom:6px;}
+.scenario-btn .scn-title{font-size:13px;font-weight:500;color:var(--text-dark);}
+.scenario-btn .scn-sub{font-size:11.5px;color:var(--text-muted);margin-top:2px;}
+.scenario-box{background:var(--warm-white);border:1px solid var(--border);border-radius:16px;padding:1.8rem;display:none;}
+.scenario-box.active{display:block;animation:fadeUp .3s ease;}
+.scenario-situation{background:var(--sage-pale);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.25rem;font-size:14px;color:var(--text-mid);line-height:1.7;border-left:3px solid var(--soft-green);}
+body.rtl .scenario-situation{border-left:none;border-right:3px solid var(--soft-green);}
+.scenario-responses{display:grid;gap:10px;}
+.response-option{border-radius:12px;padding:1rem 1.25rem;border:1px solid var(--border);cursor:pointer;transition:all .2s;}
+.response-option:hover{border-color:var(--gold);}
+.response-option.response-good{background:#EDF7F0;border-color:#B5DFC2;}
+.response-option.response-bad{background:#FDF0EF;border-color:#F5C0BD;}
+.response-option.response-ok{background:#FBF5E0;border-color:var(--gold-light);}
+.response-label{font-size:13px;font-weight:500;margin-bottom:4px;}
+.response-label.good{color:#1E6637;}
+.response-label.bad{color:#B03030;}
+.response-label.ok{color:#8A6010;}
+.response-text{font-size:13px;color:var(--text-mid);line-height:1.55;}
+.response-why{font-size:12px;color:var(--text-muted);margin-top:6px;font-style:italic;}
+
+/* ── WEEKLY PLANNER ── */
+.planner-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-bottom:1.5rem;}
+.planner-day{text-align:center;}
+.planner-day-label{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.07em;color:var(--text-muted);margin-bottom:6px;}
+.planner-cell{background:var(--warm-white);border:1px solid var(--border);border-radius:10px;padding:10px 7px;min-height:110px;font-size:12px;cursor:pointer;transition:border-color .2s;}
+.planner-cell:hover{border-color:var(--gold);}
+.planner-cell.today{border-color:var(--gold);background:var(--gold-pale);}
+.planner-cell .cell-date{font-size:13px;font-weight:500;color:var(--text-dark);margin-bottom:6px;}
+.planner-item{background:var(--sage-pale);border-radius:5px;padding:3px 6px;font-size:10.5px;color:var(--mid-green);margin-bottom:3px;line-height:1.4;}
+.planner-item.isl{background:var(--purple-pale);color:var(--purple);}
+.planner-item.emot{background:var(--orange-pale);color:var(--orange);}
+.planner-add-input{width:100%;border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:13px;font-family:inherit;background:var(--warm-white);color:var(--text-dark);margin-bottom:8px;}
+.planner-add-input:focus{outline:none;border-color:var(--gold);}
+.planner-controls{display:flex;gap:8px;margin-bottom:1.5rem;flex-wrap:wrap;}
+.btn-sm{padding:7px 16px;border-radius:8px;border:1px solid var(--border);background:var(--warm-white);font-size:13px;cursor:pointer;font-family:inherit;color:var(--text-mid);transition:all .2s;}
+.btn-sm:hover{border-color:var(--gold);color:var(--deep-green);}
+.btn-sm.primary{background:var(--deep-green);color:#fff;border-color:var(--deep-green);}
+.btn-sm.primary:hover{background:var(--mid-green);}
+
+/* ── JOURNAL ── */
+.journal-wrap{max-width:680px;}
+.journal-prompts{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:1rem;}
+.prompt-chip{padding:6px 13px;border-radius:20px;border:1px solid var(--border);background:var(--warm-white);font-size:12.5px;color:var(--text-mid);cursor:pointer;transition:all .2s;}
+.prompt-chip:hover{border-color:var(--gold);background:var(--gold-pale);}
+.journal-textarea{width:100%;min-height:130px;border:1px solid var(--border);border-radius:12px;padding:1rem 1.25rem;font-size:14px;font-family:inherit;background:var(--warm-white);color:var(--text-dark);resize:vertical;line-height:1.7;transition:border-color .2s;}
+.journal-textarea:focus{outline:none;border-color:var(--gold);}
+.journal-actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap;}
+.journal-entries{margin-top:1.5rem;}
+.journal-entry{background:var(--warm-white);border:1px solid var(--border);border-radius:12px;padding:1rem 1.25rem;margin-bottom:10px;}
+.entry-date{font-size:11px;color:var(--text-muted);margin-bottom:6px;letter-spacing:.05em;}
+.entry-text{font-size:13.5px;color:var(--text-mid);line-height:1.65;}
+.entry-delete{font-size:11px;color:var(--red);cursor:pointer;margin-top:7px;display:inline-block;}
+.entry-delete:hover{text-decoration:underline;}
+
+/* ── ASSESSMENT ── */
+.assessment-wrap{background:var(--warm-white);border:1px solid var(--border);border-radius:20px;padding:2rem;}
+.assessment-intro{font-size:14px;color:var(--text-mid);line-height:1.7;margin-bottom:1.5rem;}
+.assessment-q{margin-bottom:1.4rem;}
+.assessment-q-text{font-size:14px;font-weight:500;color:var(--text-dark);margin-bottom:.7rem;}
+.rating-row{display:flex;gap:8px;flex-wrap:wrap;}
+.rating-btn{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--border);background:var(--warm-white);font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;font-family:inherit;}
+.rating-btn:hover{border-color:var(--gold);background:var(--gold-pale);}
+.rating-btn.selected{background:var(--deep-green);color:#fff;border-color:var(--deep-green);}
+.rating-labels{display:flex;justify-content:space-between;font-size:11px;color:var(--text-muted);margin-top:4px;}
+.assessment-result{background:var(--sage-pale);border-radius:12px;padding:1.25rem;margin-top:1.5rem;display:none;}
+.assessment-result.show{display:block;}
+.result-title{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--deep-green);margin-bottom:.6rem;}
+body.dark .result-title{color:var(--gold-light);}
+.result-text{font-size:13.5px;color:var(--text-mid);line-height:1.65;}
+.result-bars{margin-top:1rem;}
+.result-bar-row{margin-bottom:.6rem;}
+.result-bar-label{font-size:12px;color:var(--text-mid);margin-bottom:3px;}
+.result-bar-track{height:7px;background:rgba(0,0,0,0.07);border-radius:99px;overflow:hidden;}
+.result-bar-fill{height:100%;border-radius:99px;background:var(--gold);transition:width .8s ease;}
+
+/* ── CHECKLIST ── */
+.checklist-wrap{background:var(--warm-white);border:1px solid var(--border);border-radius:20px;padding:2rem;}
+.checklist-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:12px;}
+.checklist-title-text{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--deep-green);}
+body.dark .checklist-title-text{color:var(--gold-light);}
+.progress-wrap{display:flex;align-items:center;gap:12px;}
+.progress-track{width:140px;height:6px;background:var(--sage-pale);border-radius:99px;overflow:hidden;}
+.progress-fill{height:100%;background:var(--gold);border-radius:99px;transition:width .4s;}
+.progress-text{font-size:12.5px;color:var(--text-muted);}
+.checklist-group{margin-bottom:1.4rem;}
+.group-label{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);font-weight:600;margin-bottom:8px;padding-bottom:5px;border-bottom:1px solid var(--gold-light);}
+.check-row{display:flex;align-items:flex-start;gap:11px;padding:10px 11px;border-radius:9px;cursor:pointer;transition:background .15s;margin-bottom:4px;}
+.check-row:hover{background:var(--sage-pale);}
+.check-row.done{background:#EFF8F2;}
+body.dark .check-row.done{background:#0D2016;}
+.check-icon{width:21px;height:21px;border-radius:5px;border:1.5px solid var(--sage);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:12px;color:transparent;transition:all .2s;margin-top:1px;background:transparent;}
+.check-row.done .check-icon{background:var(--mid-green);border-color:var(--mid-green);color:#fff;}
+.check-label{font-size:13.5px;color:var(--text-mid);line-height:1.55;}
+.check-row.done .check-label{color:var(--sage);text-decoration:line-through;text-decoration-color:var(--sage);}
+.reset-btn{padding:6px 14px;border-radius:8px;border:1px solid var(--border);background:transparent;font-size:12px;cursor:pointer;color:var(--text-muted);font-family:inherit;transition:all .2s;}
+.reset-btn:hover{border-color:var(--red);color:var(--red);}
+
+/* ── TAB SECTION (inside panels) ── */
+.tab-section{background:var(--warm-white);border:1px solid var(--border);border-radius:14px;margin-bottom:1.5rem;}
+.tab-section-header{display:flex;border-bottom:1px solid var(--border);}
+.tab-section-btn{padding:12px 20px;font-size:13px;font-weight:400;color:var(--text-muted);cursor:pointer;border:none;background:transparent;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .2s;font-family:inherit;}
+.tab-section-btn.active{color:var(--deep-green);font-weight:500;border-bottom-color:var(--gold);}
+body.dark .tab-section-btn.active{color:var(--gold);}
+.tab-section-body{padding:1.25rem 1.4rem;}
+.sub-panel{display:none;}
+.sub-panel.active{display:block;}
+
+/* ── FOOTER ── */
+footer{text-align:center;padding:2rem;background:var(--deep-green);color:rgba(255,255,255,0.3);font-size:12px;letter-spacing:.04em;}
+
+@media(max-width:640px){
+  .hero{padding:3rem 1.25rem 2.5rem;}
+  .main{padding:1.5rem 1rem 3rem;}
+  .planner-grid{grid-template-columns:repeat(4,1fr);}
+  .planner-day:nth-child(n+5){display:none;}
+  .do-dont-grid{grid-template-columns:1fr;}
+  .hero-stats{gap:1.5rem;}
+  .header-inner{padding:0 1rem;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo-wrap">
+      <div>
+        <div class="logo-text" data-key="logo_title">Raising Teenagers</div>
+        <div class="logo-sub" data-key="logo_sub">Complete Parenting Guide · Ages 13–18</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <button class="dark-toggle" onclick="toggleDark()" id="dark-btn">🌙 Dark</button>
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" onclick="setLang('fr')">FR</button>
+        <button class="lang-btn" onclick="setLang('ar')">ع</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-badge" data-key="hero_badge">Complete Parent Guide</div>
+  <h1 data-key="hero_h1">Parenting <em>Teenagers</em><br>with Wisdom & Heart</h1>
+  <p data-key="hero_p">Strategies, techniques, tools and reflection — across connection, discipline, emotional intelligence and Islamic values — for ages 13–18.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><span class="num">6</span><span class="lbl" data-key="stat1">Modules</span></div>
+    <div class="hero-stat"><span class="num">24</span><span class="lbl" data-key="stat2">Strategies</span></div>
+    <div class="hero-stat"><span class="num">18</span><span class="lbl" data-key="stat3">Techniques</span></div>
+    <div class="hero-stat"><span class="num">3</span><span class="lbl" data-key="stat4">Languages</span></div>
+  </div>
+</section>
+
+<main class="main">
+
+  <!-- ── MAIN NAV ── -->
+  <div class="main-tabs">
+    <button class="main-tab active" onclick="showMain('strategies',this)" data-key="nav_strategies">Strategies</button>
+    <button class="main-tab" onclick="showMain('stages',this)" data-key="nav_stages">Age Stages</button>
+    <button class="main-tab" onclick="showMain('techniques',this)" data-key="nav_techniques">Techniques Library</button>
+    <button class="main-tab" onclick="showMain('scenarios',this)" data-key="nav_scenarios">Scenario Simulator</button>
+    <button class="main-tab" onclick="showMain('planner',this)" data-key="nav_planner">Weekly Planner</button>
+    <button class="main-tab" onclick="showMain('journal',this)" data-key="nav_journal">Reflection Journal</button>
+    <button class="main-tab" onclick="showMain('assessment',this)" data-key="nav_assessment">Self-Assessment</button>
+    <button class="main-tab" onclick="showMain('checklist',this)" data-key="nav_checklist">Daily Checklist</button>
+  </div>
+
+  <!-- ══════════════════════════════ STRATEGIES ══════════════════════════════ -->
+  <div class="mpanel active" id="mpanel-strategies">
+    <div class="pillars">
+      <button class="pillar-btn active" onclick="showPillar('connection',this)">🤝 <span data-key="tab_connection">Connection & Trust</span></button>
+      <button class="pillar-btn" onclick="showPillar('discipline',this)">⚖️ <span data-key="tab_discipline">Discipline & Boundaries</span></button>
+      <button class="pillar-btn" onclick="showPillar('emotional',this)">💬 <span data-key="tab_emotional">Emotional Intelligence</span></button>
+      <button class="pillar-btn" onclick="showPillar('islamic',this)">☪️ <span data-key="tab_islamic">Islamic Values</span></button>
+    </div>
+    <div id="pillar-connection" class="pillar-panel">
+      <div class="quote-strip"><div class="quote-mark">"</div><div><p class="quote-text" data-key="conn_quote">The greatest gift you can give a teenager is not advice — it is your full, unhurried attention.</p><p class="quote-source" data-key="conn_quote_src">— Parenting research consensus</p></div></div>
+      <div class="cards-grid" id="grid-connection"></div>
+    </div>
+    <div id="pillar-discipline" class="pillar-panel" style="display:none;">
+      <div class="quote-strip"><div class="quote-mark">"</div><div><p class="quote-text" data-key="disc_quote">Discipline is not about control — it is about teaching a young person to govern themselves with wisdom.</p><p class="quote-source" data-key="disc_quote_src">— Developmental psychology</p></div></div>
+      <div class="cards-grid" id="grid-discipline"></div>
+    </div>
+    <div id="pillar-emotional" class="pillar-panel" style="display:none;">
+      <div class="quote-strip"><div class="quote-mark">"</div><div><p class="quote-text" data-key="emot_quote">Children who feel heard are children who listen. The currency of connection is emotional validation.</p><p class="quote-source" data-key="emot_quote_src">— John Gottman, psychologist</p></div></div>
+      <div class="cards-grid" id="grid-emotional"></div>
+    </div>
+    <div id="pillar-islamic" class="pillar-panel" style="display:none;">
+      <div class="quote-strip"><div class="quote-mark">"</div><div><p class="quote-text" data-key="isl_quote">No father gives his child anything better than good manners and a sound character.</p><p class="quote-source" data-key="isl_quote_src">— Prophet Muhammad ﷺ (Al-Tirmidhi)</p></div></div>
+      <div class="cards-grid" id="grid-islamic"></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════ AGE STAGES ══════════════════════════════ -->
+  <div class="mpanel" id="mpanel-stages">
+    <div class="section-head">
+      <h2 class="section-title" data-key="stages_title">Parenting by Age Stage</h2>
+      <p class="section-sub" data-key="stages_sub">Every sub-stage of adolescence has distinct neurological, emotional, and social needs. What works at 13 may not work at 17.</p>
+    </div>
+    <div class="age-grid" id="age-grid"></div>
+    <div class="tab-section">
+      <div class="tab-section-header">
+        <button class="tab-section-btn active" onclick="showSubTab('brain',this,'brain-tabs')" data-key="brain_tab">Brain Development</button>
+        <button class="tab-section-btn" onclick="showSubTab('identity',this,'brain-tabs')" data-key="identity_tab">Identity Formation</button>
+        <button class="tab-section-btn" onclick="showSubTab('peers',this,'brain-tabs')" data-key="peers_tab">Peer Influence</button>
+      </div>
+      <div class="tab-section-body" id="brain-tabs">
+        <div class="sub-panel active" id="sub-brain">
+          <p style="font-size:14px;color:var(--text-mid);line-height:1.75;" data-key="brain_content">The prefrontal cortex — the brain's decision-making and impulse-control center — is not fully developed until age 25. During adolescence, the brain's reward center (limbic system) is hyperactive while rational control is still developing. This means teenagers are neurologically wired to seek novelty, respond to peer approval, take risks, and feel emotions intensely. Understanding this changes everything: your teenager is not being irrational on purpose — their brain is literally still being built. Patience and repetition are the tools that work.</p>
+        </div>
+        <div class="sub-panel" id="sub-identity">
+          <p style="font-size:14px;color:var(--text-mid);line-height:1.75;" data-key="identity_content">Erik Erikson identified adolescence as the stage of "Identity vs. Role Confusion" — teens are asking "Who am I?" in every domain: values, beliefs, relationships, career, culture and faith. This questioning is healthy and necessary. A teenager who experiments with identity in a safe family environment is far less likely to form a fragile, externally-defined identity later. Your job is not to provide their identity — it is to provide the safety and roots from which they can explore and return.</p>
+        </div>
+        <div class="sub-panel" id="sub-peers">
+          <p style="font-size:14px;color:var(--text-mid);line-height:1.75;" data-key="peers_content">Peer influence peaks between ages 12–15, then gradually decreases as identity solidifies. The key insight: peer pressure is not primarily external ("my friends told me to") — it is internal ("I want to belong"). A teenager with a strong sense of belonging at home is far more resistant to negative peer influence. The antidote to unhealthy peer influence is not surveillance — it is connection. Know their friends. Keep your home the gathering place. Stay curious about their social world without judgment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════ TECHNIQUES ══════════════════════════════ -->
+  <div class="mpanel" id="mpanel-techniques">
+    <div class="section-head">
+      <h2 class="section-title" data-key="tech_title">Techniques Library</h2>
+      <p class="section-sub" data-key="tech_sub">Evidence-based and Islamic-grounded techniques with step-by-step application guides.</p>
+    </div>
+    <div class="techniques-filter">
+      <button class="filter-btn active" onclick="filterTech('all',this)" data-key="filter_all">All</button>
+      <button class="filter-btn" onclick="filterTech('conn',this)" data-key="filter_conn">Connection</button>
+      <button class="filter-btn" onclick="filterTech('disc',this)" data-key="filter_disc">Discipline</button>
+      <button class="filter-btn" onclick="filterTech('emot',this)" data-key="filter_emot">Emotional</button>
+      <button class="filter-btn" onclick="filterTech('isl',this)" data-key="filter_isl">Islamic</button>
+    </div>
+    <div class="techniques-grid" id="techniques-grid"></div>
+  </div>
+
+  <!-- ══════════════════════════════ SCENARIOS ══════════════════════════════ -->
+  <div class="mpanel" id="mpanel-scenarios">
+    <div class="section-head">
+      <h2 class="section-title" data-key="scn_title">Scenario Simulator</h2>
+      <p class="section-sub" data-key="scn_sub">Real-life parenting moments. Choose a scenario and see how different responses play out — and why.</p>
+    </div>
+    <div class="scenario-selector" id="scenario-selector"></div>
+    <div id="scenario-display"></div>
+  </div>
+
+  <!-- ══════════════════════════════ PLANNER ══════════════════════════════ -->
+  <div class="mpanel" id="mpanel-planner">
+    <div class="section-head">
+      <h2 class="section-title" data-key="plan_title">Weekly Parenting Planner</h2>
+      <p class="section-sub" data-key="plan_sub">Plan intentional parenting moments across the week. Click a day to add an activity or intention.</p>
+    </div>
+    <div class="planner-controls">
+      <button class="btn-sm" onclick="prevWeek()" data-key="prev_week">← Prev</button>
+      <span id="week-label" style="font-size:14px;color:var(--text-mid);padding:7px 10px;"></span>
+      <button class="btn-sm" onclick="nextWeek()" data-key="next_week">Next →</button>
+      <button class="btn-sm primary" onclick="clearPlanner()" data-key="clear_week">Clear Week</button>
+    </div>
+    <div class="planner-grid" id="planner-grid"></div>
+    <div id="planner-add-area" style="display:none;background:var(--warm-white);border:1px solid var(--border);border-radius:12px;padding:1.25rem;margin-top:.5rem;">
+      <p style="font-size:13px;font-weight:500;color:var(--text-dark);margin-bottom:10px;" id="planner-add-label"></p>
+      <input type="text" class="planner-add-input" id="planner-input" placeholder="e.g. Take a walk together, Discuss school goals..." />
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button class="btn-sm primary" onclick="addPlannerItem()">+ Add</button>
+        <button class="btn-sm" onclick="closePlannerAdd()" data-key="cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════ JOURNAL ══════════════════════════════ -->
+  <div class="mpanel" id="mpanel-journal">
+    <div class="section-head">
+      <h2 class="section-title" data-key="jour_title">Reflection Journal</h2>
+      <p class="section-sub" data-key="jour_sub">A private space to reflect on your parenting journey. Use a prompt or write freely.</p>
+    </div>
+    <div class="journal-wrap">
+      <div class="journal-prompts" id="journal-prompts"></div>
+      <textarea class="journal-textarea" id="journal-text" data-key-placeholder="jour_placeholder"></textarea>
+      <div class="journal-actions">
+        <button class="btn-sm primary" onclick="saveJournalEntry()"><span data-key="save_entry">Save Entry</span></button>
+        <button class="btn-sm" onclick="clearJournalText()"><span data-key="clear_text">Clear</span></button>
+      </div>
+      <div class="journal-entries" id="journal-entries"></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════ ASSESSMENT ══════════════════════════════ -->
+  <div class="mpanel" id="mpanel-assessment">
+    <div class="section-head">
+      <h2 class="section-title" data-key="assess_title">Parenting Self-Assessment</h2>
+      <p class="section-sub" data-key="assess_sub">Honestly rate yourself across five parenting dimensions. There are no wrong answers — only honest starting points.</p>
+    </div>
+    <div class="assessment-wrap">
+      <p class="assessment-intro" data-key="assess_intro">Rate each area from 1 (needs significant work) to 5 (doing well consistently). Be honest — this is for your growth, not your grade.</p>
+      <div id="assessment-questions"></div>
+      <button class="btn-sm primary" onclick="showAssessmentResults()" style="margin-top:.5rem;"><span data-key="see_results">See My Results</span></button>
+      <div class="assessment-result" id="assessment-result">
+        <div class="result-title" id="result-title"></div>
+        <div class="result-text" id="result-text"></div>
+        <div class="result-bars" id="result-bars"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════ CHECKLIST ══════════════════════════════ -->
+  <div class="mpanel" id="mpanel-checklist">
+    <div class="checklist-wrap">
+      <div class="checklist-header">
+        <h2 class="checklist-title-text" data-key="check_title">Daily Parenting Habits</h2>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div class="progress-wrap">
+            <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+            <span class="progress-text" id="progress-text">0 / 12</span>
+          </div>
+          <button class="reset-btn" onclick="resetChecklist()" data-key="reset_check">Reset</button>
+        </div>
+      </div>
+      <div id="checklist-groups"></div>
+    </div>
+  </div>
+
+</main>
+<footer><span data-key="footer">Parenting Strategies Hub · Ages 13–18 · English · Français · العربية</span></footer>
+
+<script>
+/* ══ TRANSLATION DATA ══ */
+const T = {
+  en: {
+    logo_title:"Raising Teenagers",logo_sub:"Complete Parenting Guide · Ages 13–18",
+    hero_badge:"Complete Parent Guide",
+    hero_h1:`Parenting <em>Teenagers</em><br>with Wisdom & Heart`,
+    hero_p:"Strategies, techniques, tools and reflection — across connection, discipline, emotional intelligence and Islamic values — for ages 13–18.",
+    stat1:"Modules",stat2:"Strategies",stat3:"Techniques",stat4:"Languages",
+    nav_strategies:"Strategies",nav_stages:"Age Stages",nav_techniques:"Techniques",nav_scenarios:"Scenarios",nav_planner:"Planner",nav_journal:"Journal",nav_assessment:"Self-Assessment",nav_checklist:"Checklist",
+    tab_connection:"Connection & Trust",tab_discipline:"Discipline & Boundaries",tab_emotional:"Emotional Intelligence",tab_islamic:"Islamic Values",
+    conn_quote:"The greatest gift you can give a teenager is not advice — it is your full, unhurried attention.",
+    conn_quote_src:"— Parenting research consensus",
+    disc_quote:"Discipline is not about control — it is about teaching a young person to govern themselves with wisdom.",
+    disc_quote_src:"— Developmental psychology",
+    emot_quote:"Children who feel heard are children who listen. The currency of connection is emotional validation.",
+    emot_quote_src:"— John Gottman, psychologist",
+    isl_quote:"No father gives his child anything better than good manners and a sound character.",
+    isl_quote_src:"— Prophet Muhammad ﷺ (Al-Tirmidhi)",
+    stages_title:"Parenting by Age Stage",stages_sub:"Every sub-stage of adolescence has distinct neurological, emotional, and social needs.",
+    brain_tab:"Brain Development",identity_tab:"Identity Formation",peers_tab:"Peer Influence",
+    brain_content:"The prefrontal cortex — the brain's decision-making center — is not fully developed until age 25. During adolescence, the limbic system (reward and emotion) is hyperactive while rational control is still developing. Teenagers are neurologically wired to seek novelty, respond to peer approval, take risks, and feel emotions intensely. This is not defiance — it is biology. Patience and repetition are the tools that work.",
+    identity_content:"Erik Erikson identified adolescence as the stage of 'Identity vs. Role Confusion.' Teens are asking 'Who am I?' across values, beliefs, relationships and faith. This exploration is healthy and necessary. A teenager who can safely question at home is far less likely to form a fragile, externally-defined identity. Your role is to provide roots from which they can explore — and a safe place to return.",
+    peers_content:"Peer influence peaks between 12–15, then decreases as identity solidifies. The key insight: peer pressure is mostly internal — it's the need to belong. A teenager with strong family belonging is far more resistant to negative influence. The antidote is not surveillance — it is connection. Know their friends, keep your home the gathering place, stay curious without judgment.",
+    tech_title:"Techniques Library",tech_sub:"Evidence-based and Islamic-grounded techniques with step-by-step guides.",
+    filter_all:"All",filter_conn:"Connection",filter_disc:"Discipline",filter_emot:"Emotional",filter_isl:"Islamic",
+    scn_title:"Scenario Simulator",scn_sub:"Real-life moments. Choose a scenario and see how different responses play out.",
+    plan_title:"Weekly Parenting Planner",plan_sub:"Plan intentional parenting moments. Click a day to add an activity.",
+    prev_week:"← Prev",next_week:"Next →",clear_week:"Clear Week",cancel:"Cancel",
+    jour_title:"Reflection Journal",jour_sub:"A private space to reflect. Use a prompt or write freely.",
+    jour_placeholder:"Write your reflection here...",save_entry:"Save Entry",clear_text:"Clear",
+    assess_title:"Parenting Self-Assessment",assess_sub:"Rate yourself honestly across five parenting dimensions.",
+    assess_intro:"Rate each area from 1 (needs work) to 5 (doing well consistently). Be honest — this is for growth, not judgment.",
+    see_results:"See My Results",check_title:"Daily Parenting Habits",reset_check:"Reset",
+    do_label:"Do",dont_label:"Don't",
+    group_conn:"Connection",group_disc:"Discipline",group_emot:"Emotional IQ",group_isl:"Islamic Values",
+    footer:"Parenting Strategies Hub · Ages 13–18 · English · Français · العربية",
+    days:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+    week_label:"Week of"
+  },
+  fr: {
+    logo_title:"Élever des Ados",logo_sub:"Guide Complet · 13–18 ans",
+    hero_badge:"Guide Complet pour Parents",
+    hero_h1:`Élever des <em>Adolescents</em><br>avec Sagesse & Cœur`,
+    hero_p:"Stratégies, techniques, outils et réflexion — connexion, discipline, intelligence émotionnelle et valeurs islamiques — pour les 13–18 ans.",
+    stat1:"Modules",stat2:"Stratégies",stat3:"Techniques",stat4:"Langues",
+    nav_strategies:"Stratégies",nav_stages:"Stades d'Âge",nav_techniques:"Techniques",nav_scenarios:"Scénarios",nav_planner:"Planificateur",nav_journal:"Journal",nav_assessment:"Auto-évaluation",nav_checklist:"Liste",
+    tab_connection:"Connexion & Confiance",tab_discipline:"Discipline & Limites",tab_emotional:"Intelligence Émotionnelle",tab_islamic:"Valeurs Islamiques",
+    conn_quote:"Le plus beau cadeau pour un adolescent n'est pas un conseil — c'est votre attention complète et sans hâte.",
+    conn_quote_src:"— Consensus de la recherche parentale",
+    disc_quote:"La discipline ne consiste pas à contrôler — il s'agit d'apprendre à un jeune à se gouverner avec sagesse.",
+    disc_quote_src:"— Psychologie du développement",
+    emot_quote:"Les enfants qui se sentent entendus sont des enfants qui écoutent. La monnaie de la connexion est la validation émotionnelle.",
+    emot_quote_src:"— John Gottman, psychologue",
+    isl_quote:"Aucun père ne donne à son enfant quelque chose de mieux que de bonnes manières et un bon caractère.",
+    isl_quote_src:"— Le Prophète Muhammad ﷺ (Al-Tirmidhi)",
+    stages_title:"Parentalité selon l'Âge",stages_sub:"Chaque sous-stade de l'adolescence a des besoins neurologiques, émotionnels et sociaux distincts.",
+    brain_tab:"Développement du Cerveau",identity_tab:"Formation de l'Identité",peers_tab:"Influence des Pairs",
+    brain_content:"Le cortex préfrontal — le centre décisionnel du cerveau — n'est pas pleinement développé avant 25 ans. Le système limbique (récompense et émotion) est hyperactif pendant l'adolescence. Les ados sont neurologiquement programmés pour chercher la nouveauté, répondre à l'approbation des pairs et ressentir intensément. Ce n'est pas de la désobéissance — c'est de la biologie. La patience et la répétition sont les outils qui fonctionnent.",
+    identity_content:"Erikson a identifié l'adolescence comme le stade 'Identité vs Confusion des rôles.' Les ados se demandent 'Qui suis-je ?' dans tous les domaines. Cette exploration est saine. Un adolescent qui peut questionner en sécurité à la maison développera une identité plus solide. Votre rôle est de fournir les racines depuis lesquelles ils peuvent explorer — et un endroit sûr pour revenir.",
+    peers_content:"L'influence des pairs culmine entre 12–15 ans, puis diminue. L'insight clé : la pression des pairs est surtout interne — le besoin d'appartenir. Un adolescent avec un fort sentiment d'appartenance familiale résiste mieux aux influences négatives. L'antidote n'est pas la surveillance — c'est la connexion.",
+    tech_title:"Bibliothèque de Techniques",tech_sub:"Techniques fondées sur des preuves et des valeurs islamiques avec guides étape par étape.",
+    filter_all:"Tout",filter_conn:"Connexion",filter_disc:"Discipline",filter_emot:"Émotionnel",filter_isl:"Islamique",
+    scn_title:"Simulateur de Scénarios",scn_sub:"Situations réelles. Choisissez un scénario et voyez comment différentes réponses se déroulent.",
+    plan_title:"Planificateur Hebdomadaire",plan_sub:"Planifiez des moments parentaux intentionnels. Cliquez sur un jour pour ajouter une activité.",
+    prev_week:"← Préc",next_week:"Suiv →",clear_week:"Effacer la semaine",cancel:"Annuler",
+    jour_title:"Journal de Réflexion",jour_sub:"Un espace privé pour réfléchir. Utilisez une invite ou écrivez librement.",
+    jour_placeholder:"Écrivez votre réflexion ici...",save_entry:"Enregistrer",clear_text:"Effacer",
+    assess_title:"Auto-évaluation Parentale",assess_sub:"Évaluez-vous honnêtement sur cinq dimensions parentales.",
+    assess_intro:"Notez chaque domaine de 1 (à améliorer) à 5 (bien maîtrisé). Soyez honnête — c'est pour votre croissance.",
+    see_results:"Voir mes Résultats",check_title:"Habitudes Parentales Quotidiennes",reset_check:"Réinitialiser",
+    do_label:"Faire",dont_label:"Éviter",
+    group_conn:"Connexion",group_disc:"Discipline",group_emot:"Émotions",group_isl:"Valeurs",
+    footer:"Guide Stratégies Parentales · 13–18 ans · English · Français · العربية",
+    days:["Lun","Mar","Mer","Jeu","Ven","Sam","Dim"],
+    week_label:"Semaine du"
+  },
+  ar: {
+    logo_title:"تربية المراهقين",logo_sub:"الدليل الشامل · ١٣–١٨ سنة",
+    hero_badge:"الدليل الكامل للوالدين",
+    hero_h1:`تربية <em>المراهقين</em><br>بالحكمة والمحبة`,
+    hero_p:"استراتيجيات وتقنيات وأدوات وتأمل — في التواصل والانضباط والذكاء العاطفي والقيم الإسلامية — للمراهقين ١٣–١٨.",
+    stat1:"وحدات",stat2:"استراتيجية",stat3:"تقنية",stat4:"لغات",
+    nav_strategies:"الاستراتيجيات",nav_stages:"مراحل العمر",nav_techniques:"مكتبة التقنيات",nav_scenarios:"محاكاة المواقف",nav_planner:"المخطط الأسبوعي",nav_journal:"مفكرة التأمل",nav_assessment:"التقييم الذاتي",nav_checklist:"القائمة اليومية",
+    tab_connection:"التواصل والثقة",tab_discipline:"الانضباط والحدود",tab_emotional:"الذكاء العاطفي",tab_islamic:"القيم الإسلامية",
+    conn_quote:"أعظم هدية للمراهق ليست النصيحة — بل انتباهك التام وغير المتسرع.",
+    conn_quote_src:"— إجماع أبحاث التربية",
+    disc_quote:"الانضباط ليس عن السيطرة — إنه تعليم الشاب كيف يحكم نفسه بالحكمة.",
+    disc_quote_src:"— علم النفس التنموي",
+    emot_quote:"الأطفال الذين يشعرون بأنهم مسموعون هم أطفال يُنصتون. عملة التواصل هي التحقق العاطفي.",
+    emot_quote_src:"— جون غوتمان، عالم نفس",
+    isl_quote:"ما نَحَلَ والدٌ ولداً أفضل من أدب حسن.",
+    isl_quote_src:"— النبي محمد ﷺ (رواه الترمذي)",
+    stages_title:"التربية حسب مرحلة العمر",stages_sub:"لكل مرحلة من المراهقة احتياجات عصبية وعاطفية واجتماعية متميزة.",
+    brain_tab:"تطور الدماغ",identity_tab:"تكوين الهوية",peers_tab:"تأثير الأقران",
+    brain_content:"القشرة الجبهية — مركز اتخاذ القرار — لا تكتمل حتى سن 25. خلال المراهقة، الجهاز الحوفي (المكافأة والعاطفة) مفرط النشاط بينما السيطرة العقلانية لا تزال تتطور. المراهقون مبرمجون عصبياً للبحث عن الجديد والاستجابة لموافقة الأقران والمغامرة والشعور بشدة. هذا ليس تمرداً — إنه علم الأحياء. الصبر والتكرار هما الأدوات التي تنجح.",
+    identity_content:"حدد إريكسون المراهقة كمرحلة 'الهوية مقابل ارتباك الأدوار'. يسأل المراهق 'من أنا؟' في كل المجالات. هذا الاستكشاف صحي وضروري. المراهق الذي يستطيع التساؤل بأمان في المنزل سيكون أكثر استقراراً في هويته. دورك هو تقديم الجذور التي يمكنه منها الاستكشاف — ومكاناً آمناً للعودة.",
+    peers_content:"يبلغ تأثير الأقران ذروته بين ١٢–١٥ عاماً ثم يتناقص. الرؤية الأساسية: ضغط الأقران داخلي في معظمه — إنه الحاجة للانتماء. المراهق الذي لديه شعور قوي بالانتماء الأسري أكثر مقاومة للتأثيرات السلبية. الترياق ليس المراقبة — بل التواصل.",
+    tech_title:"مكتبة التقنيات",tech_sub:"تقنيات مستندة إلى الأدلة والقيم الإسلامية مع أدلة تطبيق خطوة بخطوة.",
+    filter_all:"الكل",filter_conn:"التواصل",filter_disc:"الانضباط",filter_emot:"العاطفي",filter_isl:"إسلامي",
+    scn_title:"محاكاة المواقف",scn_sub:"مواقف حقيقية. اختر موقفاً وانظر كيف تسير الاستجابات المختلفة.",
+    plan_title:"المخطط التربوي الأسبوعي",plan_sub:"خطط للحظات تربوية هادفة. انقر على يوم لإضافة نشاط.",
+    prev_week:"→ السابق",next_week:"التالي ←",clear_week:"مسح الأسبوع",cancel:"إلغاء",
+    jour_title:"مفكرة التأمل",jour_sub:"فضاء خاص للتأمل. استخدم موضوعاً أو اكتب بحرية.",
+    jour_placeholder:"اكتب تأملك هنا...",save_entry:"حفظ",clear_text:"مسح",
+    assess_title:"التقييم الذاتي للوالدين",assess_sub:"قيّم نفسك بصدق على خمسة أبعاد تربوية.",
+    assess_intro:"قيّم كل مجال من ١ (يحتاج عمل) إلى ٥ (جيد باستمرار). كن صادقاً — هذا للنمو لا للحكم.",
+    see_results:"رؤية نتائجي",check_title:"العادات التربوية اليومية",reset_check:"إعادة تعيين",
+    do_label:"افعل",dont_label:"تجنّب",
+    group_conn:"التواصل",group_disc:"الانضباط",group_emot:"العواطف",group_isl:"القيم",
+    footer:"دليل استراتيجيات التربية · ١٣–١٨ · English · Français · العربية",
+    days:["الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت","الأحد"],
+    week_label:"أسبوع"
+  }
+};
+
+/* ══ CARDS DATA ══ */
+const CARDS = {
+  connection:[
+    {key:"c1",titles:{en:"Earn trust before giving advice",fr:"Mériter la confiance avant de conseiller",ar:"اكسب الثقة قبل تقديم النصيحة"},
+     descs:{en:"Teens stop listening when they feel judged. Lead with curiosity, not correction.",fr:"Les ados cessent d'écouter quand ils se sentent jugés. Commencez par la curiosité.",ar:"يكفّ المراهقون عن الاستماع حين يشعرون بالحكم. قدِّم الفضول لا التصحيح."},
+     tips:{en:["Start with 'Tell me more' instead of 'I think you should…'","Share your own teen struggles — vulnerability builds bridges","Spend 10 uninterrupted minutes daily (no phones, no agenda)"],fr:["Commencez par 'Dis-m'en plus' plutôt que 'Je pense que tu devrais…'","Partagez vos difficultés d'ado — la vulnérabilité crée des liens","10 minutes sans interruption chaque jour"],ar:["ابدأ بـ'أخبرني أكثر' بدلاً من 'أعتقد أنك يجب...'","شارك تجاربك في مراهقتك — الضعف يبني الجسور","10 دقائق يومياً بلا هاتف ولا أجندة"]},
+     tagClass:"tag-connection"},
+    {key:"c2",titles:{en:"Reconnect after conflict",fr:"Se reconnecter après un conflit",ar:"أعد التواصل بعد الخلاف"},
+     descs:{en:"Repair quickly and calmly — the longer the silence, the more the distance grows.",fr:"Réparez rapidement et calmement — plus le silence dure, plus la distance grandit.",ar:"أصلح بسرعة وهدوء — كلما طال الصمت كبر البُعد."},
+     tips:{en:["Be the first to reach out — maturity means going first","Acknowledge your own mistakes openly","Use side-by-side activities (driving, cooking) for low-pressure repair"],fr:["Soyez le premier — la maturité, c'est prendre l'initiative","Reconnaissez vos erreurs ouvertement","Activités côte à côte pour une réparation sans pression"],ar:["كن أول من يمد يد المصالحة — النضج يعني المبادرة","اعترف بأخطائك بصراحة","استخدم الأنشطة الجانبية للمصالحة في جو هادئ"]},
+     tagClass:"tag-connection"},
+    {key:"c3",titles:{en:"Respect their world to stay in it",fr:"Respecter leur monde pour y rester",ar:"احترم عالمهم لتبقى فيه"},
+     descs:{en:"A teenager's friends, music, and hobbies are their identity. Dismiss them and you dismiss the teen.",fr:"Les amis, la musique et les loisirs font partie de l'identité. Les rejeter, c'est rejeter l'adolescent.",ar:"أصدقاء المراهق وموسيقاه وهواياته هي هويته. إذا رفضتها رفضته."},
+     tips:{en:["Ask genuine questions about their interests without judgment","Meet their friends — let your home be the gathering place","Resist comparing their generation unfavorably to yours"],fr:["Questions sincères sur leurs intérêts sans jugement","Rencontrez leurs amis — que votre maison soit le lieu de rassemblement","Résistez à la comparaison négative des générations"],ar:["اسأل بصدق عن اهتماماتهم بلا حكم","قابل أصدقاءهم — اجعل منزلك مكاناً للتجمع","تجنب المقارنة السلبية بين جيلهم وجيلك"]},
+     tagClass:"tag-connection"},
+    {key:"c4",titles:{en:"The 5:1 positive ratio",fr:"Le ratio positif 5:1",ar:"نسبة الإيجابية ٥:١"},
+     descs:{en:"Research by Gottman shows that for every one criticism or correction, a relationship needs at least five positive interactions to stay healthy.",fr:"La recherche de Gottman montre que pour chaque critique, une relation a besoin d'au moins cinq interactions positives.",ar:"تُظهر أبحاث غوتمان أنه لكل نقد أو تصحيح، تحتاج العلاقة إلى خمس تفاعلات إيجابية على الأقل."},
+     tips:{en:["Count your corrections vs. your affirmations — the gap may surprise you","Positive interactions: humor, curiosity, praise, shared activity, touch","Schedule fun with no agenda: a movie, a drive, a meal together"],fr:["Comptez vos corrections vs vos affirmations","Interactions positives : humour, curiosité, éloge, activité, contact","Planifiez du plaisir sans agenda"],ar:["عدّ تصحيحاتك مقابل تأكيداتك — الفارق قد يفاجئك","التفاعلات الإيجابية: الفكاهة والفضول والمدح والنشاط المشترك","خصص وقتاً للمتعة بلا أجندة"]},
+     tagClass:"tag-connection"},
+  ],
+  discipline:[
+    {key:"d1",titles:{en:"Boundaries with reasons, not just rules",fr:"Des limites avec des raisons",ar:"حدود بأسباب لا مجرد قواعد"},
+     descs:{en:"Teens rebel against arbitrary rules. Explain the why — compliance becomes a choice, not a fight.",fr:"Les ados se rebellent contre les règles arbitraires. Expliquez le pourquoi.",ar:"يتمرد المراهقون على القواعد التعسفية. اشرح السبب."},
+     tips:{en:["'Be home by 10 so we can all sleep without worry'","Involve them in setting family rules","Allow renegotiation as they mature"],fr:["'Rentre à 22h pour que nous dormions sans inquiétude'","Impliquez-les dans les règles familiales","Permettez la renégociation"],ar:["'عُد بالمنزل قبل ١٠ مساءً حتى ننام مرتاحين'","أشركهم في وضع قواعد الأسرة","اسمح بإعادة التفاوض كلما نضجوا"]},
+     dodont:{en:{do:["Explain reasoning","Involve teens in rule-setting","Allow age-appropriate renegotiation"],dont:["Say 'because I said so'","Punish without explanation","Set rules you don't follow"]},
+             fr:{do:["Expliquez la raison","Impliquez les ados","Permettez la renégociation"],dont:["Dire 'parce que je le dis'","Punir sans explication","Des règles que vous ne respectez pas"]},
+             ar:{do:["اشرح المنطق","أشرك المراهق","اسمح بإعادة التفاوض"],dont:["'لأنني قلت ذلك'","العقاب بلا تفسير","قواعد لا تطبقها أنت"]}},
+     tagClass:"tag-discipline"},
+    {key:"d2",titles:{en:"Natural consequences over punishment",fr:"Les conséquences naturelles",ar:"العواقب الطبيعية أفضل من العقاب"},
+     descs:{en:"Imposed punishments create resentment; natural consequences build responsibility.",fr:"Les punitions créent du ressentiment ; les conséquences naturelles construisent la responsabilité.",ar:"العقوبات تولّد الحقد، أما العواقب الطبيعية فتبني المسؤولية."},
+     tips:{en:["Skip homework → they face the teacher, you don't rescue","Overspend allowance → they go without","Reserve direct intervention for safety — not convenience"],fr:["Travail non fait → ils font face au prof","Dépenser tout l'argent → ils s'en passent","Intervention directe pour la sécurité seulement"],ar:["إهمال الواجب → يواجه المعلم وحده","إنفاق المصروف → يعيش بلا إضافات","احتفظ بالتدخل للسلامة فقط"]},
+     tagClass:"tag-discipline"},
+    {key:"d3",titles:{en:"Pick your battles intentionally",fr:"Choisir ses combats",ar:"اختر معاركك بوعي"},
+     descs:{en:"Fighting about everything trains them to tune you out. Prioritize what truly matters.",fr:"Se battre pour tout les entraîne à vous ignorer. Priorisez ce qui compte vraiment.",ar:"المعارك على كل شيء تعلّمهم تجاهلك. أعطِ الأولوية لما يهم حقاً."},
+     tips:{en:["Non-negotiable: safety, ethics, respect, core obligations","Negotiable: bedroom tidiness, clothing choices, hairstyle","Ask: 'Will this matter in 5 years?' before escalating"],fr:["Non-négociables : sécurité, éthique, respect","Négociables : chambre, vêtements, coiffure","'Est-ce que ça comptera dans 5 ans ?'"],ar:["غير قابل للتفاوض: السلامة والأخلاق والاحترام","قابل للتفاوض: ترتيب الغرفة والملابس","اسأل: 'هل سيهم هذا بعد ٥ سنوات؟'"]},
+     tagClass:"tag-discipline"},
+    {key:"d4",titles:{en:"Logical consequences vs. punishment",fr:"Conséquences logiques vs punitions",ar:"العواقب المنطقية مقابل العقاب"},
+     descs:{en:"Logical consequences are directly related to the behavior; they are respectful, reasonable, and revealed in advance.",fr:"Les conséquences logiques sont directement liées au comportement ; elles sont respectueuses, raisonnables et annoncées à l'avance.",ar:"العواقب المنطقية مرتبطة مباشرة بالسلوك؛ هي محترمة ومعقولة ومُعلنة مسبقاً."},
+     tips:{en:["Came home late → loses car privilege for one week (related, not random)","Disrespected a sibling → writes a sincere apology letter","Frame it: 'This is what happens when…' not 'You're being punished'"],fr:["Rentrée tardive → perd le privilège de la voiture (lié, pas aléatoire)","Irrespectueux avec un frère → écrit une lettre d'excuses","'C'est ce qui se passe quand...' pas 'Tu es puni'"],ar:["التأخر → يفقد امتياز السيارة لأسبوع (مرتبط لا عشوائي)","إساءة لأخ → يكتب رسالة اعتذار صادقة","'هذا ما يحدث عندما...' لا 'أنت تُعاقب'"]},
+     tagClass:"tag-discipline"},
+  ],
+  emotional:[
+    {key:"e1",titles:{en:"Name the emotion first",fr:"Nommer l'émotion d'abord",ar:"سمِّ العاطفة أولاً"},
+     descs:{en:"Teens feel deeply but often lack the vocabulary. Help them name what they feel — it reduces intensity.",fr:"Les ados ressentent intensément mais manquent de vocabulaire. Les aider à nommer réduit l'intensité.",ar:"يشعر المراهقون بعمق لكنهم يفتقرون للمفردات. تسمية الشعور تقلل حدته."},
+     tips:{en:["Mirror: 'It sounds like you're feeling overlooked, is that right?'","Never say 'you shouldn't feel that way' — validate first","Model your own emotional vocabulary ('I'm feeling overwhelmed today')"],fr:["Refléter : 'On dirait que tu te sens ignoré ?'","Ne dites jamais 'tu ne devrais pas ressentir ça'","Modélisez votre propre vocabulaire émotionnel"],ar:["عكس المشاعر: 'يبدو أنك تشعر بالتجاهل، هل هذا صحيح؟'","لا تقل 'لا يجب أن تشعر هكذا' — اعترف أولاً","نمذج مفرداتك العاطفية الخاصة"]},
+     tagClass:"tag-emotional"},
+    {key:"e2",titles:{en:"Regulate, don't suppress",fr:"Réguler, pas réprimer",ar:"نظِّم لا تكبت"},
+     descs:{en:"The goal isn't a teen who never gets angry — it's one who handles strong emotions without causing harm.",fr:"L'objectif n'est pas un adolescent sans colère — c'est un adolescent qui gère ses émotions sans causer de tort.",ar:"الهدف ليس مراهقاً لا يغضب — بل مراهق يتعامل مع مشاعره دون إيذاء."},
+     tips:{en:["Teach the pause: 'It's okay to say I need 10 minutes'","Introduce physical outlets: walking, sport, journaling","Debrief after big emotions pass — not during the storm"],fr:["La pause : 'Il est normal de dire J'ai besoin de 10 minutes'","Exutoires physiques : marche, sport, journal","Bilan après les grandes émotions — pas pendant"],ar:["علِّم التوقف: 'لا بأس بالقول أحتاج ١٠ دقائق'","مخارج جسدية: المشي والرياضة والكتابة","ناقش بعد هدوء العاصفة لا أثناءها"]},
+     tagClass:"tag-emotional"},
+    {key:"e3",titles:{en:"Active listening that actually works",fr:"L'écoute active efficace",ar:"الاستماع الفعّال الحقيقي"},
+     descs:{en:"Most parents listen to respond. Teens need parents who listen to understand.",fr:"La plupart des parents écoutent pour répondre. Les ados ont besoin qu'on écoute pour comprendre.",ar:"معظم الآباء يستمعون ليردوا. المراهقون يحتاجون آباءً يستمعون ليفهموا."},
+     tips:{en:["Put your phone face down — full presence matters","Ask 'how did that make you feel?' not just 'what happened?'","Sit with silence — don't rush to fill it"],fr:["Téléphone retourné — la présence totale compte","Demandez 'comment t'es-tu senti ?' pas seulement 'que s'est-il passé ?'","Supportez le silence"],ar:["ضع هاتفك بعيداً — الحضور الكامل مهم","اسأل 'كيف جعلك ذلك تشعر؟' لا فقط 'ماذا حدث؟'","تقبّل الصمت — لا تتسرع لملئه"]},
+     dodont:{en:{do:["Phone face down","Ask how they felt","Allow silences"],dont:["Jump to fix-it mode","Compare to your own experience","Check phone while they talk"]},
+             fr:{do:["Téléphone retourné","Demander comment ils ont ressenti","Tolérer le silence"],dont:["Mode solution","Comparer à votre expérience","Téléphone pendant la conversation"]},
+             ar:{do:["الهاتف بعيداً","اسأل عن مشاعرهم","تقبّل الصمت"],dont:["التسرع للحلول","المقارنة بتجربتك","النظر في الهاتف"]}},
+     tagClass:"tag-emotional"},
+    {key:"e4",titles:{en:"Emotional coaching not dismissing",fr:"Coaching émotionnel, pas rejet",ar:"التدريب العاطفي لا الرفض"},
+     descs:{en:"John Gottman identified four parenting styles for handling emotions. Emotional coaching — the most effective — involves acknowledging, naming, empathizing and problem-solving together.",fr:"Gottman a identifié quatre styles parentaux. Le coaching émotionnel — le plus efficace — implique de reconnaître, nommer, empathiser et résoudre ensemble.",ar:"حدد غوتمان أربعة أنماط تربوية. التدريب العاطفي — الأكثر فاعلية — يتضمن الاعتراف والتسمية والتعاطف وحل المشكلات معاً."},
+     tips:{en:["Step 1: Notice the emotion ('You seem upset about something')","Step 2: Validate it ('That makes sense — that sounds really frustrating')","Step 3: Help label it ('Is it more anger or more disappointment?')","Step 4: Set limits while validating ('You can feel that, AND we still need to…')"],fr:["Étape 1 : Remarquer ('Tu sembles contrarié')","Étape 2 : Valider ('Ça a du sens — c'est vraiment frustrant')","Étape 3 : Aider à nommer ('Est-ce plus de la colère ou de la déception ?')","Étape 4 : Fixer des limites en validant"],ar:["الخطوة ١: لاحظ العاطفة ('يبدو أنك منزعج')","الخطوة ٢: اعترف بها ('هذا منطقي — يبدو محبطاً فعلاً')","الخطوة ٣: ساعد في التسمية ('هل هو غضب أم خيبة أمل أكثر؟')","الخطوة ٤: ضع حدوداً مع الاعتراف"]},
+     tagClass:"tag-emotional"},
+  ],
+  islamic:[
+    {key:"i1",titles:{en:"Build taqwa through experience",fr:"Construire la taqwa par l'expérience",ar:"ابنِ التقوى بالتجربة"},
+     descs:{en:"The Prophet ﷺ taught with stories, questions, and lived example. Teens develop lasting faith through meaning, not obligation.",fr:"Le Prophète ﷺ enseignait par des histoires et l'exemple vécu. La foi durable vient du sens, pas de l'obligation.",ar:"علّم النبي ﷺ بالقصص والأسئلة والمثال الحي. الإيمان الدائم يأتي من المعنى لا الواجب."},
+     tips:{en:["Pray together — family time, not duty","Share Quranic reflections casually in conversation","Invite questions about faith without fear — doubt with love deepens iman"],fr:["Priez ensemble — moment en famille, pas obligation","Partagez des réflexions coraniques naturellement","Invitez les questions sur la foi sans crainte"],ar:["صلوا معاً — وقت عائلي لا واجب","شارك تأملاتك القرآنية بشكل طبيعي","ادعُ للتساؤل عن الإيمان بلا خوف"]},
+     tagClass:"tag-islamic"},
+    {key:"i2",titles:{en:"Teach ihsan in how they treat others",fr:"Enseigner l'ihsan envers autrui",ar:"علِّم الإحسان في معاملة الآخرين"},
+     descs:{en:"Ihsan — excellence in all actions — is one of the highest Islamic values. Help your teen see it as a lens for all relationships.",fr:"L'ihsan — l'excellence — est l'une des plus hautes valeurs islamiques. Faites-en une approche de toutes les relations.",ar:"الإحسان — الإتقان في كل عمل — من أعلى القيم الإسلامية. ساعد مراهقك على رؤيته عدسةً لجميع العلاقات."},
+     tips:{en:["Notice and praise kindness to siblings, friends, teachers, strangers","Frame academic effort as ihsan: 'Do your best as if Allah is watching'","Discuss akhlaq openly — character is as important as ibadah"],fr:["Remarquez et félicitez la gentillesse","L'effort académique comme ihsan : 'Fais de ton mieux comme si Allah regardait'","Discutez de l'akhlaq — le caractère est aussi important que l'ibadah"],ar:["انتبه وامدح اللطف تجاه الأخوة والأصدقاء والمعلمين","اجعل الجهد الأكاديمي إحساناً: 'أتقن عملك كأن الله يراك'","ناقش الأخلاق — حسن الخلق بأهمية العبادة"]},
+     tagClass:"tag-islamic"},
+    {key:"i3",titles:{en:"Model the deen, don't just preach it",fr:"Incarner le deen, pas le prêcher",ar:"جسِّد الدين ولا تكتفِ بالوعظ"},
+     descs:{en:"Teenagers have finely-tuned hypocrisy detectors. The most powerful Islamic education is watching a parent live the values they speak about.",fr:"Les ados ont des détecteurs d'hypocrisie très fins. L'éducation islamique la plus puissante, c'est voir un parent vivre ce qu'il prêche.",ar:"للمراهقين حساسية عالية للنفاق. أقوى تربية إسلامية هي مشاهدة الوالد يعيش القيم التي يتحدث عنها."},
+     tips:{en:["Let them see you make du'a in real situations","Apologize and seek forgiveness openly when you wrong them — it models tawbah","Show how Islam shapes your professional ethics and daily decisions"],fr:["Laissez-les vous voir faire du'a dans des situations réelles","Excusez-vous ouvertement quand vous les blessez — modélisez la tawbah","Montrez comment l'Islam façonne vos décisions"],ar:["دعهم يرونك تدعو في المواقف الحقيقية","اعتذر واطلب المغفرة علناً حين تظلمهم — نموذج للتوبة","أظهر كيف يشكّل الإسلام قراراتك اليومية"]},
+     tagClass:"tag-islamic"},
+    {key:"i4",titles:{en:"Use prophetic communication style",fr:"Le style de communication prophétique",ar:"استخدم الأسلوب النبوي في التواصل"},
+     descs:{en:"The Prophet ﷺ was known for asking before telling, praising before correcting, and personalizing guidance to each companion's character.",fr:"Le Prophète ﷺ demandait avant de dire, félicitait avant de corriger, et personnalisait ses conseils au caractère de chaque compagnon.",ar:"كان النبي ﷺ يسأل قبل أن يخبر، ويُثني قبل أن يصحح، ويُخصص توجيهه لشخصية كل صحابي."},
+     tips:{en:["Start guidance with a question: 'What do you think is the right thing here?'","Find something genuine to affirm before correcting","Know your child's love language — some need words, some need time, some need acts"],fr:["Commencez par une question : 'Que penses-tu qui soit juste ici ?'","Trouvez quelque chose de genuino à affirmer avant de corriger","Connaître le langage d'amour de votre enfant"],ar:["ابدأ التوجيه بسؤال: 'ما رأيك في الصواب هنا؟'","ابحث عن شيء حقيقي لتؤكده قبل التصحيح","اعرف لغة حب طفلك — بعضهم يحتاج كلمات وبعضهم وقتاً"]},
+     tagClass:"tag-islamic"},
+  ]
+};
+
+/* ══ AGE STAGES DATA ══ */
+const AGE_STAGES = {
+  en:[
+    {badge:"age-13",label:"Early: 13–14",title:"Identity Awakening",desc:"The self becomes a project. Peer approval feels like oxygen. Physical changes create deep self-consciousness.",traits:["Intensely concerned with how others see them","Begins questioning parental authority as normal","Strong need for peer validation and belonging","Mood swings are neurological, not theatrical"]},
+    {badge:"age-15",label:"Middle: 15–16",title:"Risk & Rebellion",desc:"The brain's risk-reward circuit peaks. Teens test boundaries not to upset you, but to discover who they are.",traits:["Higher-risk behavior is neurologically driven","Arguments are often about autonomy, not the topic","Romantic relationships begin to feel urgent","Parent-teen conflict typically peaks here"]},
+    {badge:"age-17",label:"Late: 17–18",title:"Toward Independence",desc:"Identity begins to consolidate. Future-orientation emerges. The relationship shifts from parent–child to adult–adult.",traits:["More capable of long-term thinking","Wants to be treated as an adult — increasingly deserves it","The quality of your relationship now predicts adult closeness","Begin transitioning to consultant, not manager"]}
+  ],
+  fr:[
+    {badge:"age-13",label:"Début: 13–14",title:"Éveil de l'Identité",desc:"Le soi devient un projet. L'approbation des pairs semble vitale. Les changements physiques créent une profonde conscience de soi.",traits:["Très préoccupé par ce que les autres pensent","Commence à remettre en question l'autorité parentale","Besoin fort de validation des pairs","Les sautes d'humeur sont neurologiques, pas théâtrales"]},
+    {badge:"age-15",label:"Milieu: 15–16",title:"Risques & Rébellion",desc:"Le circuit risque-récompense culmine. Les ados testent les limites pour découvrir qui ils sont, pas pour contrarier.",traits:["Comportements à risque d'origine neurologique","Les disputes portent souvent sur l'autonomie","Les relations romantiques commencent à sembler urgentes","Le conflit parent-ado culmine souvent ici"]},
+    {badge:"age-17",label:"Fin: 17–18",title:"Vers l'Indépendance",desc:"L'identité commence à se consolider. L'orientation vers l'avenir émerge. La relation évolue vers adulte-adulte.",traits:["Plus capable de pensée à long terme","Veut être traité comme un adulte — de plus en plus mérite","La qualité de la relation prédit la proximité adulte","Passez du manager au consultant"]}
+  ],
+  ar:[
+    {badge:"age-13",label:"المرحلة الأولى: ١٣–١٤",title:"صحوة الهوية",desc:"يصبح الذات مشروعاً. موافقة الأقران تشعر بأنها هواء. التغيرات الجسدية تخلق وعياً عميقاً بالذات.",traits:["اهتمام شديد بكيفية نظر الآخرين إليه","يبدأ التشكيك في سلطة الوالدين بشكل طبيعي","حاجة قوية للتحقق من الأقران والانتماء","تقلبات المزاج عصبية لا تمثيلية"]},
+    {badge:"age-15",label:"المرحلة الوسطى: ١٥–١٦",title:"المخاطرة والتمرد",desc:"تبلغ دائرة المخاطرة-المكافأة ذروتها. يختبر المراهقون الحدود لاكتشاف هويتهم لا لإزعاجك.",traits:["السلوك عالي المخاطرة مدفوع عصبياً","المجادلات عن الاستقلالية لا عن الموضوع","تبدأ العلاقات الرومانسية تشعر بالإلحاح","تبلغ حدة الصراع بين الوالدين والمراهق ذروتها"]},
+    {badge:"age-17",label:"المرحلة المتأخرة: ١٧–١٨",title:"نحو الاستقلال",desc:"تبدأ الهوية بالتوطيد. يظهر التوجه نحو المستقبل. تتحول العلاقة من والد–طفل إلى بالغ–بالغ.",traits:["أكثر قدرة على التفكير بعيد المدى","يريد أن يُعامل كبالغ — يستحق ذلك أكثر فأكثر","جودة علاقتك الآن تتنبأ بالقرب في المستقبل","انتقل من مدير إلى مستشار"]}
+  ]
+};
+
+/* ══ TECHNIQUES DATA ══ */
+const TECHNIQUES = {
+  en:[
+    {cat:"conn",icon:"🤝",iconClass:"tech-icon-conn",name:"The 10-Minute Check-In",source:"Positive Parenting Program (Triple P)",desc:"A structured daily ritual of 10 minutes of undivided attention — no phones, no agenda, no correction.",steps:["Choose a consistent time (after school, after dinner)","Put your phone in another room — fully model presence","Let them lead — ask 'what was the best/hardest part of your day?'","Listen without advising unless they ask","End with a specific affirmation ('I like how you handled that')"]},
+    {cat:"conn",icon:"🔄",iconClass:"tech-icon-conn",name:"Repair Rituals",source:"Gottman Institute",desc:"A structured approach to reconnecting after conflict, especially when the parent was the one who escalated.",steps:["Initiate within 24 hours — don't wait for them","Start with your own accountability: 'I got too heated there'","Ask: 'How did that feel from your side?'","Listen without defending","Offer a genuine repair: 'Next time I'll take a breath first'"]},
+    {cat:"disc",icon:"⚖️",iconClass:"tech-icon-disc",name:"The IDEAL Problem-Solving Model",source:"Social learning theory",desc:"A five-step framework for handling conflicts in a way that teaches teens to self-regulate future problems.",steps:["I — Identify the problem (define it together)","D — Describe your feelings (parent AND teen)","E — Explore solutions (brainstorm without judging)","A — Act on the best solution (agree and try it)","L — Look back (review how it worked after a week)"]},
+    {cat:"disc",icon:"🎯",iconClass:"tech-icon-disc",name:"Logical Consequence Framework",source:"Alfred Adler / Jane Nelsen",desc:"Consequences that are Related, Respectful, Reasonable, and Revealed in advance — the 4 Rs.",steps:["Related: the consequence connects to the behavior logically","Respectful: delivered calmly, not in anger","Reasonable: proportionate to the situation","Revealed: stated in advance, not invented after the fact","Example: Late curfew → loses 1 hour privilege the next night"]},
+    {cat:"emot",icon:"💬",iconClass:"tech-icon-emot",name:"Emotion Coaching (Gottman 5 Steps)",source:"John Gottman Ph.D.",desc:"The evidence-based approach to building emotional intelligence — shown to raise children who perform better academically and socially.",steps:["Notice the emotion (be aware before they explode)","Connect the emotion as an opportunity, not a problem","Listen and validate ('That sounds really hard')","Help label the emotion with precision","Set limits while exploring solutions together"]},
+    {cat:"emot",icon:"🧘",iconClass:"tech-icon-emot",name:"The Pause Technique",source:"Daniel Siegel (Mindsight)",desc:"Teaching teens the neurological 'pause' between stimulus and response — the foundation of emotional intelligence.",steps:["Introduce the concept: 'Your reactive brain fires before your thinking brain'","Practice with low-stakes scenarios first","Agree on a family signal: a raised hand means 'I need a pause'","Teach 4-7-8 breathing as a pause tool","Celebrate when they use it — it's a real skill, not a weakness"]},
+    {cat:"isl",icon:"☪️",iconClass:"tech-icon-isl",name:"Prophetic Story Method",source:"Seerah & Hadith pedagogy",desc:"Following the Prophet's ﷺ method of teaching character through stories, not commands — the most effective Islamic education technique.",steps:["Choose a Prophetic story relevant to a current challenge","Tell it as a story, not a lecture ('Did you know what happened when…')","Ask: 'What do you think about how he handled that?'","Let them draw the lesson themselves — they'll own it","Connect it to their specific situation naturally"]},
+    {cat:"isl",icon:"🤲",iconClass:"tech-icon-isl",name:"Family Du'a Practice",source:"Ihsan & Tawakkul tradition",desc:"Making du'a together as a family — not just a ritual but a shared act of trust and vulnerability that builds iman.",steps:["Choose a consistent time: after Fajr or at bedtime","Let each family member voice their personal du'a","Make du'a for each other by name","Include gratitude explicitly ('Alhamdulillah for...')","Let teens see you make du'a for their specific struggles"]},
+  ],
+  fr:[
+    {cat:"conn",icon:"🤝",iconClass:"tech-icon-conn",name:"Le Check-In de 10 Minutes",source:"Programme de Parentalité Positive (Triple P)",desc:"Un rituel quotidien de 10 minutes d'attention totale — sans téléphone, sans agenda, sans correction.",steps:["Choisissez un moment régulier (après l'école, après le dîner)","Téléphone dans une autre pièce — modélisez la présence","Laissez-les mener — 'quelle a été la meilleure/plus difficile partie de ta journée ?'","Écoutez sans conseiller à moins qu'ils ne demandent","Terminez par une affirmation spécifique"]},
+    {cat:"conn",icon:"🔄",iconClass:"tech-icon-conn",name:"Rituels de Réparation",source:"Institut Gottman",desc:"Une approche structurée pour se reconnecter après un conflit, surtout quand le parent a escaladé.",steps:["Initiez dans les 24 heures — n'attendez pas","Commencez par votre propre responsabilité","Demandez : 'Comment l'as-tu vécu de ton côté ?'","Écoutez sans vous défendre","Offrez une réparation sincère"]},
+    {cat:"disc",icon:"⚖️",iconClass:"tech-icon-disc",name:"Modèle IDEAL de Résolution",source:"Théorie de l'apprentissage social",desc:"Un cadre en cinq étapes pour gérer les conflits et apprendre aux ados à réguler les problèmes futurs.",steps:["I — Identifier le problème (ensemble)","D — Décrire ses sentiments (parent ET ado)","E — Explorer des solutions (brainstormer sans juger)","A — Agir sur la meilleure solution","L — Regarder en arrière (évaluer après une semaine)"]},
+    {cat:"disc",icon:"🎯",iconClass:"tech-icon-disc",name:"Cadre des Conséquences Logiques",source:"Alfred Adler / Jane Nelsen",desc:"Conséquences Reliées, Respectueuses, Raisonnables et Révélées — les 4 R.",steps:["Reliée : la conséquence est liée logiquement au comportement","Respectueuse : délivrée calmement","Raisonnable : proportionnée","Révélée : annoncée à l'avance","Exemple : Rentrée tardive → perd 1h de privilège le lendemain"]},
+    {cat:"emot",icon:"💬",iconClass:"tech-icon-emot",name:"Coaching Émotionnel (5 Étapes Gottman)",source:"John Gottman Ph.D.",desc:"L'approche basée sur des preuves pour développer l'intelligence émotionnelle.",steps:["Remarquer l'émotion avant qu'elle n'explose","Voir l'émotion comme une opportunité, pas un problème","Écouter et valider ('Ça semble vraiment difficile')","Aider à nommer l'émotion avec précision","Fixer des limites tout en explorant des solutions ensemble"]},
+    {cat:"emot",icon:"🧘",iconClass:"tech-icon-emot",name:"La Technique de la Pause",source:"Daniel Siegel (Mindsight)",desc:"Apprendre aux ados la 'pause' neurologique entre le stimulus et la réponse.",steps:["Introduire le concept : 'Ton cerveau réactif s'embrase avant ton cerveau pensant'","Pratiquer avec des scénarios à faibles enjeux","Convenir d'un signal familial : la main levée = besoin d'une pause","Enseigner la respiration 4-7-8","Célébrer quand ils l'utilisent — c'est une vraie compétence"]},
+    {cat:"isl",icon:"☪️",iconClass:"tech-icon-isl",name:"La Méthode des Histoires Prophétiques",source:"Pédagogie de la Seerah",desc:"La méthode du Prophète ﷺ d'enseigner le caractère par des histoires, pas des commandements.",steps:["Choisissez une histoire prophétique liée à un défi actuel","Racontez-la comme une histoire, pas un cours","Demandez : 'Que pensez-vous de sa façon de gérer ça ?'","Laissez-les tirer la leçon eux-mêmes","Reliez-la naturellement à leur situation spécifique"]},
+    {cat:"isl",icon:"🤲",iconClass:"tech-icon-isl",name:"Pratique du Du'a en Famille",source:"Tradition de l'Ihsan",desc:"Faire du'a ensemble en famille — un acte partagé de confiance qui construit l'iman.",steps:["Choisissez un moment régulier : après Fajr ou au coucher","Chaque membre exprime son du'a personnel","Faire du'a les uns pour les autres par nom","Inclure la gratitude explicitement","Laisser les ados vous voir faire du'a pour leurs luttes spécifiques"]},
+  ],
+  ar:[
+    {cat:"conn",icon:"🤝",iconClass:"tech-icon-conn",name:"تقنية الـ ١٠ دقائق اليومية",source:"برنامج التربية الإيجابية (Triple P)",desc:"طقس يومي لـ ١٠ دقائق من الانتباه الكامل — بلا هاتف ولا أجندة ولا تصحيح.",steps:["اختر وقتاً ثابتاً (بعد المدرسة أو بعد العشاء)","ضع هاتفك في غرفة أخرى — نمذج الحضور الكامل","دعهم يقودون — 'ما كان أفضل/أصعب جزء في يومك؟'","استمع بلا نصائح إلا إذا طلبوا","أنهِ بتأكيد محدد وصادق"]},
+    {cat:"conn",icon:"🔄",iconClass:"tech-icon-conn",name:"طقوس الإصلاح",source:"معهد غوتمان",desc:"نهج منظم لإعادة التواصل بعد الخلاف، خاصة حين يكون الوالد من أشعل الموقف.",steps:["ابدأ خلال ٢٤ ساعة — لا تنتظر","ابدأ بمسؤوليتك أنت: 'تصرفت بقسوة'","اسأل: 'كيف شعرت من جانبك؟'","استمع بلا دفاع","قدِّم إصلاحاً حقيقياً: 'في المرة القادمة سآخذ نفساً أولاً'"]},
+    {cat:"disc",icon:"⚖️",iconClass:"tech-icon-disc",name:"نموذج IDEAL لحل المشكلات",source:"نظرية التعلم الاجتماعي",desc:"إطار خماسي للتعامل مع الخلافات بطريقة تعلّم المراهق تنظيم المشكلات المستقبلية.",steps:["I — تحديد المشكلة (معاً)","D — وصف المشاعر (الوالد والمراهق)","E — استكشاف الحلول (عصف ذهني بلا حكم)","A — التصرف وفق أفضل حل (الاتفاق والمحاولة)","L — المراجعة (تقييم النتيجة بعد أسبوع)"]},
+    {cat:"disc",icon:"🎯",iconClass:"tech-icon-disc",name:"إطار العواقب المنطقية",source:"ألفريد آدلر / جاين نيلسن",desc:"عواقب مرتبطة ومحترمة ومعقولة ومُعلنة — قاعدة الـ ٤ م.",steps:["مرتبطة: العاقبة مرتبطة منطقياً بالسلوك","محترمة: تُقال بهدوء لا غضب","معقولة: متناسبة مع الموقف","مُعلنة: مذكورة مسبقاً لا بعد الحدث","مثال: التأخر → يفقد ساعة امتياز الليلة التالية"]},
+    {cat:"emot",icon:"💬",iconClass:"tech-icon-emot",name:"التدريب العاطفي (٥ خطوات غوتمان)",source:"جون غوتمان دكتوراه",desc:"النهج المستند إلى الأدلة لبناء الذكاء العاطفي.",steps:["لاحظ العاطفة قبل أن تنفجر","انظر إلى العاطفة كفرصة لا مشكلة","استمع واعترف ('يبدو هذا صعباً فعلاً')","ساعد في تسمية العاطفة بدقة","ضع حدوداً مع استكشاف الحلول معاً"]},
+    {cat:"emot",icon:"🧘",iconClass:"tech-icon-emot",name:"تقنية التوقف",source:"دانيال سيغل (Mindsight)",desc:"تعليم المراهقين 'التوقف' العصبي بين المحفز والاستجابة — أساس الذكاء العاطفي.",steps:["قدِّم المفهوم: 'دماغك التفاعلي يشتعل قبل دماغك المفكر'","تدرب على مواقف منخفضة المخاطر أولاً","اتفقوا على إشارة عائلية: اليد المرفوعة تعني 'أحتاج توقفاً'","علِّم التنفس ٤-٧-٨ كأداة توقف","احتفل حين يستخدمونها — هي مهارة حقيقية"]},
+    {cat:"isl",icon:"☪️",iconClass:"tech-icon-isl",name:"منهج القصة النبوية",source:"التربية بالسيرة والحديث",desc:"اتباع منهج النبي ﷺ في تعليم الشخصية بالقصص لا الأوامر.",steps:["اختر قصة نبوية مرتبطة بتحدٍّ حالي","أروِها كقصة لا محاضرة ('هل تعلم ما حدث حين...')","اسأل: 'ما رأيك في أسلوبه في التعامل؟'","دعهم يستخلصون الدرس بأنفسهم","اربطها بوضعهم الخاص بشكل طبيعي"]},
+    {cat:"isl",icon:"🤲",iconClass:"tech-icon-isl",name:"ممارسة الدعاء العائلي",source:"تقاليد الإحسان والتوكل",desc:"الدعاء معاً كعائلة — ليس مجرد طقس بل فعل مشترك من الثقة يبني الإيمان.",steps:["اختر وقتاً ثابتاً: بعد الفجر أو قبل النوم","دعوا كل فرد يعبّر عن دعائه الشخصي","ادعوا لبعضكم بالاسم","أدرج الشكر صراحة ('الحمد لله على...')","دعهم يرونك تدعو لتحدياتهم المحددة"]},
+  ]
+};
+
+/* ══ SCENARIOS DATA ══ */
+const SCENARIOS = {
+  en:[
+    {icon:"📱",title:"Phone Conflict",sub:"Screen time argument",situation:"Your 15-year-old is on their phone at midnight on a school night. You've asked three times. They ignore you.",
+     responses:[
+       {type:"bad",label:"Reactive",text:"You storm in, take the phone, and say 'That's it — no phone for a week!' In the moment it feels decisive.",why:"Why it backfires: It escalates without teaching. Tomorrow they'll be angry, not reflective. The problem behavior wasn't addressed — only punished."},
+       {type:"ok",label:"Rule-focused",text:"You calmly say 'We have a rule about midnight screens. Give me the phone for tonight.'",why:"Better — calm delivery. But it's still enforcement-only. No conversation, no understanding built."},
+       {type:"good",label:"Connection-first",text:"Next morning, when both are rested, you say: 'I noticed you were up late. What's going on? Is something keeping you awake?' Then you listen before you address the rule.",why:"Why it works: You gather information first. Maybe they're anxious about an exam. Maybe they're talking to a friend in distress. The rule conversation happens from a place of understanding, not anger."}
+     ]},
+    {icon:"🏫",title:"School Grades",sub:"Academic pressure",situation:"Your 16-year-old brings home a failed test. You can see they're already ashamed. Your first instinct is to ask 'What happened?'",
+     responses:[
+       {type:"bad",label:"Pressure",text:"'This is unacceptable. Do you know what this does to your GPA? You need to take school more seriously.'",why:"Why it backfires: Shame increases when it's piled on. They already know they failed. Adding more shame shuts down learning. They'll hide the next failure."},
+       {type:"ok",label:"Problem-solving",text:"'Let's figure out how to do better next time. What topics were hardest?'",why:"Practical, but skips the emotional acknowledgment. The shame is still there unaddressed."},
+       {type:"good",label:"Validate then solve",text:"'That face tells me you're already beating yourself up. I'm not going to pile on. When you're ready, let's figure out what happened — not to judge, but to plan.'",why:"Why it works: Validates the emotion first. Removes the shame spiral. They now feel safe to be honest about what went wrong. Problem-solving from safety, not shame."}
+     ]},
+    {icon:"👥",title:"Friend Drama",sub:"Social conflict",situation:"Your 14-year-old comes home crying because their best friend excluded them from a group event.",
+     responses:[
+       {type:"bad",label:"Minimize",text:"'Oh, don't worry about it. You'll make new friends. It's not a big deal at your age.'",why:"Why it backfires: Minimizing makes them feel their pain is wrong. They won't bring emotional problems to you next time."},
+       {type:"ok",label:"Fix-it mode",text:"'Let's call the friend and sort this out. Do you want me to text their parent?'",why:"Jumps to solving, but they didn't ask for solutions. They needed to be heard first. You've just taken ownership of their problem."},
+       {type:"good",label:"Presence first",text:"Sit next to them. 'That hurts. Tell me what happened.' Then you listen fully — no advice, no minimizing, no fixing — until they're done. Only then: 'What do you need right now?'",why:"Why it works: Presence before problem-solving. They feel genuinely heard. The question 'what do you need?' gives them agency. Sometimes they just need to be held."}
+     ]},
+  ],
+  fr:[
+    {icon:"📱",title:"Conflit de Téléphone",sub:"Dispute sur le temps d'écran",situation:"Votre ado de 15 ans est sur son téléphone à minuit un soir de semaine. Vous avez demandé trois fois. Il vous ignore.",
+     responses:[
+       {type:"bad",label:"Réactif",text:"Vous entrez dans sa chambre, prenez le téléphone et dites 'C'est fini — plus de téléphone pendant une semaine !'",why:"Pourquoi ça échoue : escalade sans enseigner. Demain il sera en colère, pas réfléchi. Le comportement n'a pas été abordé — seulement puni."},
+       {type:"ok",label:"Orienté règles",text:"Vous dites calmement 'Nous avons une règle sur les écrans à minuit. Donne-moi le téléphone pour ce soir.'",why:"Mieux — livraison calme. Mais c'est de l'application pure. Pas de conversation, pas de compréhension."},
+       {type:"good",label:"Connexion d'abord",text:"Le lendemain matin, reposés : 'J'ai remarqué que tu étais debout tard. Que se passe-t-il ? Est-ce que quelque chose t'empêche de dormir ?' Puis vous écoutez avant d'aborder la règle.",why:"Pourquoi ça marche : vous recueillez d'abord des informations. Peut-être est-il anxieux pour un examen. La conversation sur la règle se déroule depuis une compréhension, pas la colère."}
+     ]},
+    {icon:"🏫",title:"Notes Scolaires",sub:"Pression académique",situation:"Votre ado de 16 ans rentre avec un examen raté. Vous voyez qu'il a déjà honte.",
+     responses:[
+       {type:"bad",label:"Pression",text:"'C'est inacceptable. Tu dois prendre l'école plus au sérieux.'",why:"Pourquoi ça échoue : la honte augmente quand on y ajoute. Ils cachent les prochains échecs."},
+       {type:"ok",label:"Résolution de problèmes",text:"'Voyons comment faire mieux la prochaine fois. Quels sujets étaient les plus difficiles ?'",why:"Pratique, mais ignore la reconnaissance émotionnelle. La honte reste là, non traitée."},
+       {type:"good",label:"Valider puis résoudre",text:"'Ce visage me dit que tu te bats déjà contre toi-même. Je ne vais pas en rajouter. Quand tu es prêt, voyons ce qui s'est passé — pas pour juger, mais pour planifier.'",why:"Pourquoi ça marche : valide l'émotion d'abord. Supprime la spirale de honte. Résolution depuis la sécurité, pas la honte."}
+     ]},
+    {icon:"👥",title:"Drama Social",sub:"Conflit d'amitié",situation:"Votre ado de 14 ans rentre en larmes parce que son meilleur ami l'a exclu d'un événement de groupe.",
+     responses:[
+       {type:"bad",label:"Minimiser",text:"'Oh, ne t'inquiète pas. Tu te feras de nouveaux amis. Ce n'est pas grave à ton âge.'",why:"Pourquoi ça échoue : minimiser leur fait sentir que leur douleur est fausse. Ils ne vous apporteront plus de problèmes émotionnels."},
+       {type:"ok",label:"Mode solution",text:"'Appelons l'ami et réglons ça. Veux-tu que j'envoie un SMS à ses parents ?'",why:"Saute aux solutions, mais ils ne demandaient pas de solutions. Vous venez de prendre possession de leur problème."},
+       {type:"good",label:"Présence d'abord",text:"Asseyez-vous à côté d'eux. 'Ça fait mal. Raconte-moi ce qui s'est passé.' Puis vous écoutez pleinement. Seulement après : 'De quoi as-tu besoin en ce moment ?'",why:"Pourquoi ça marche : présence avant résolution. Ils se sentent vraiment entendus. La question leur donne de l'agentivité."}
+     ]},
+  ],
+  ar:[
+    {icon:"📱",title:"خلاف الهاتف",sub:"نزاع حول وقت الشاشة",situation:"مراهقك البالغ ١٥ عاماً على هاتفه منتصف الليل في يوم دراسي. طلبت منه ثلاث مرات. يتجاهلك.",
+     responses:[
+       {type:"bad",label:"الرد التفاعلي",text:"تدخل وتأخذ الهاتف وتقول 'انتهى الأمر — لا هاتف لمدة أسبوع!'",why:"لماذا يفشل: تصعيد بلا تعليم. غداً سيكون غاضباً لا متأملاً. السلوك لم يُعالج — عُوقب فقط."},
+       {type:"ok",label:"التركيز على القاعدة",text:"تقول بهدوء 'لدينا قاعدة بشأن الشاشات ليلاً. أعطني الهاتف لهذه الليلة.'",why:"أفضل — التسليم الهادئ. لكنه لا يزال تطبيقاً فحسب. لا محادثة ولا بناء فهم."},
+       {type:"good",label:"التواصل أولاً",text:"في الصباح التالي حين كلاكما مرتاحان: 'لاحظت أنك كنت صاحياً متأخراً. ماذا يجري؟ هل هناك شيء يمنعك من النوم؟' ثم تستمع قبل أن تتناول القاعدة.",why:"لماذا ينجح: تجمع المعلومات أولاً. ربما هو قلق من امتحان. محادثة القاعدة تجري من فهم لا غضب."}
+     ]},
+    {icon:"🏫",title:"الدرجات الدراسية",sub:"الضغط الأكاديمي",situation:"يعود مراهقك البالغ ١٦ عاماً بامتحان راسب. ترى أنه خجل بالفعل.",
+     responses:[
+       {type:"bad",label:"الضغط",text:"'هذا غير مقبول. هل تعرف ما يفعله هذا بمعدلك؟ يجب أن تأخذ المدرسة بجدية.'",why:"لماذا يفشل: الخزي يزداد حين يُضاف إليه. إضافة المزيد من الخزي يغلق التعلم. سيخفي الإخفاق التالي."},
+       {type:"ok",label:"حل المشكلات",text:"'لنعرف كيف نتحسن في المرة القادمة. ما المواضيع الأصعب؟'",why:"عملي، لكنه يتخطى الاعتراف العاطفي. الخزي لا يزال موجوداً دون معالجة."},
+       {type:"good",label:"التحقق ثم الحل",text:"'وجهك يخبرني أنك تُعاقب نفسك بالفعل. لن أزيد. حين تكون مستعداً، دعنا نفهم ما حدث — لا للحكم، بل للتخطيط.'",why:"لماذا ينجح: يُحقق من العاطفة أولاً. يُزيل دوامة الخزي. حل المشكلات من الأمان لا الخزي."}
+     ]},
+    {icon:"👥",title:"دراما الأصدقاء",sub:"نزاع اجتماعي",situation:"يعود مراهقك البالغ ١٤ عاماً باكياً لأن أعز أصدقائه استبعده من فعالية جماعية.",
+     responses:[
+       {type:"bad",label:"التهوين",text:"'لا تقلق. ستجد أصدقاء جدداً. هذا ليس أمراً كبيراً في عمرك.'",why:"لماذا يفشل: التهوين يجعله يشعر أن ألمه خاطئ. لن يأتيك بمشاكل عاطفية مرة أخرى."},
+       {type:"ok",label:"وضع حل المشكلات",text:"'لنتصل بالصديق ونحل هذا. هل تريد أن أرسل رسالة لوالديه؟'",why:"يقفز للحلول، لكنه لم يطلب حلولاً. أخذت ملكية مشكلته للتو."},
+       {type:"good",label:"الحضور أولاً",text:"اجلس بجانبه. 'هذا مؤلم. أخبرني ما حدث.' ثم تستمع بالكامل — بلا نصائح ولا تهوين ولا حلول — حتى ينتهي. فقط بعدها: 'ماذا تحتاج الآن؟'",why:"لماذا ينجح: الحضور قبل حل المشكلة. يشعر بأنه مسموع حقاً. السؤال عما يحتاج يمنحه الاستقلالية."}
+     ]},
+  ]
+};
+
+/* ══ CHECKLIST DATA ══ */
+const CHECKLIST = {
+  en:{groups:[
+    {label:"group_conn",items:["Had at least one non-task conversation with my teenager today","Put my phone down and gave full attention for 10 minutes","Said something positive or affirming (not just for achievement)"]},
+    {label:"group_disc",items:["Responded calmly rather than reactively to a tension point","Explained a rule with the reason behind it","Let a natural consequence play out without rescuing"]},
+    {label:"group_emot",items:["Listened to understand, not just to respond","Validated their feelings before problem-solving","Modeled emotional regulation — named my own feelings openly"]},
+    {label:"group_isl",items:["Prayed or made du'a together (or in their presence)","Shared an Islamic reflection, story, or ayah naturally","Demonstrated ihsan in a situation they could observe"]}
+  ]},
+  fr:{groups:[
+    {label:"group_conn",items:["Eu au moins une conversation non-utilitaire aujourd'hui","Posé mon téléphone et donné toute mon attention 10 minutes","Dit quelque chose de positif (pas seulement pour un résultat)"]},
+    {label:"group_disc",items:["Répondu calmement à un point de tension","Expliqué une règle avec sa raison","Laissé une conséquence naturelle se dérouler"]},
+    {label:"group_emot",items:["Écouté pour comprendre, pas pour répondre","Validé leurs émotions avant de résoudre","Modélisé la régulation émotionnelle"]},
+    {label:"group_isl",items:["Prié ou fait du'a ensemble","Partagé une réflexion islamique naturellement","Démontré l'ihsan dans une situation observable"]}
+  ]},
+  ar:{groups:[
+    {label:"group_conn",items:["أجريت محادثة غير مهمية مع ابني/ابنتي اليوم","أبعدت هاتفي وأعطيت انتباهي الكامل لـ١٠ دقائق","قلت شيئاً إيجابياً أو معززاً"]},
+    {label:"group_disc",items:["استجبت بهدوء على نقطة توتر","شرحت قاعدة مع السبب","تركت عاقبة طبيعية دون تدخل"]},
+    {label:"group_emot",items:["استمعت لأفهم لا لأرد","اعترفت بمشاعرهم قبل حل المشكلة","نمذجت التنظيم العاطفي بصوت عالٍ"]},
+    {label:"group_isl",items:["صلينا أو دعونا معاً أو في حضورهم","شاركت تأملاً إسلامياً بشكل طبيعي","جسّدت الإحسان في موقف رأوه"]}
+  ]}
+};
+
+/* ══ ASSESSMENT DATA ══ */
+const ASSESSMENT_QS = {
+  en:[
+    {q:"How consistently do I spend quality 1-on-1 time with my teenager each week?",dim:"Connection"},
+    {q:"When my teenager gets angry or upset, how well do I stay calm and respond thoughtfully?",dim:"Emotional"},
+    {q:"How clearly do I explain the reasons behind the rules and boundaries I set?",dim:"Discipline"},
+    {q:"How well do I model the Islamic values I want my teenager to develop?",dim:"Islamic"},
+    {q:"How quickly and gracefully do I repair our relationship after a conflict?",dim:"Repair"}
+  ],
+  fr:[
+    {q:"Dans quelle mesure est-ce que je passe du temps de qualité en tête-à-tête avec mon ado chaque semaine ?",dim:"Connexion"},
+    {q:"Quand mon ado se met en colère, dans quelle mesure est-ce que je reste calme et réfléchi ?",dim:"Émotionnel"},
+    {q:"Dans quelle mesure est-ce que j'explique clairement les raisons derrière les règles que je fixe ?",dim:"Discipline"},
+    {q:"Dans quelle mesure est-ce que je modèle les valeurs islamiques que je veux que mon ado développe ?",dim:"Islamique"},
+    {q:"Dans quelle mesure est-ce que je répare rapidement notre relation après un conflit ?",dim:"Réparation"}
+  ],
+  ar:[
+    {q:"ما مدى انتظامي في قضاء وقت عميق فردي مع مراهقي كل أسبوع؟",dim:"التواصل"},
+    {q:"حين يغضب مراهقي، ما مدى قدرتي على البقاء هادئاً والاستجابة بتفكر؟",dim:"العاطفي"},
+    {q:"ما مدى وضوحي في شرح أسباب القواعد والحدود التي أضعها؟",dim:"الانضباط"},
+    {q:"ما مدى نمذجتي للقيم الإسلامية التي أريد مراهقي أن يطورها؟",dim:"الإسلامي"},
+    {q:"ما مدى سرعتي وإتقاني في إصلاح علاقتنا بعد الخلاف؟",dim:"الإصلاح"}
+  ]
+};
+
+const ASSESSMENT_RESULTS = {
+  en:{
+    high:{title:"Strong Foundation",text:"Your self-assessment shows consistent intentional parenting across most dimensions. The work now is refinement — deepening the practices that are already working and being honest about any dimension where the score surprised you."},
+    mid:{title:"Growing Awareness",text:"You're doing meaningful things in some areas and have clear opportunities in others. The most important next step is picking one dimension and committing to a specific daily practice for 3 weeks."},
+    low:{title:"Honest Starting Point",text:"The fact that you're here, assessing yourself honestly, is itself an act of excellent parenting. Every great parent started exactly where you are now. Pick the technique that resonates most and start there."}
+  },
+  fr:{
+    high:{title:"Base Solide",text:"Votre auto-évaluation montre une parentalité intentionnelle dans la plupart des dimensions. Le travail maintenant est d'affiner — approfondir les pratiques qui fonctionnent déjà."},
+    mid:{title:"Conscience Croissante",text:"Vous faites des choses significatives dans certains domaines et avez des opportunités dans d'autres. L'étape la plus importante est de choisir une dimension et de vous engager dans une pratique quotidienne spécifique pendant 3 semaines."},
+    low:{title:"Point de Départ Honnête",text:"Le fait que vous soyez ici à vous évaluer honnêtement est en soi un acte d'excellente parentalité. Choisissez la technique qui résonne le plus et commencez par là."}
+  },
+  ar:{
+    high:{title:"أساس قوي",text:"تظهر تقييمك الذاتي تربية هادفة ومتسقة في معظم الأبعاد. العمل الآن هو التطوير — تعميق الممارسات التي تعمل بالفعل."},
+    mid:{title:"وعي متنامٍ",text:"تقوم بأشياء ذات معنى في بعض المجالات ولديك فرص واضحة في مجالات أخرى. أهم خطوة تالية هي اختيار بُعد واحد والالتزام بممارسة يومية محددة لـ٣ أسابيع."},
+    low:{title:"نقطة بداية صادقة",text:"حقيقة وجودك هنا تقيّم نفسك بصدق هي في حد ذاتها فعل تربية ممتازة. كل والد عظيم بدأ من حيث أنت الآن. اختر التقنية التي تتردد في نفسك وابدأ منها."}
+  }
+};
+
+/* ══ JOURNAL PROMPTS ══ */
+const JOURNAL_PROMPTS = {
+  en:["What went well today?","Where did I lose patience?","What does my teen need more of from me?","What am I proud of this week?","What would I do differently?","How is my relationship with my teen growing?"],
+  fr:["Qu'est-ce qui s'est bien passé aujourd'hui ?","Où ai-je perdu patience ?","De quoi mon ado a-t-il besoin de plus de ma part ?","De quoi suis-je fier cette semaine ?","Que ferais-je différemment ?","Comment ma relation avec mon ado grandit-elle ?"],
+  ar:["ما الذي سار بشكل جيد اليوم؟","أين فقدت صبري؟","ماذا يحتاج مراهقي مني أكثر؟","بماذا أفخر هذا الأسبوع؟","ماذا كنت سأفعل بشكل مختلف؟","كيف تنمو علاقتي بمراهقي؟"]
+};
+
+/* ══ STATE ══ */
+let currentLang = 'en';
+let checkState = {};
+let journalEntries = [];
+let plannerData = {};
+let selectedPlannerDay = null;
+let currentWeekOffset = 0;
+let assessmentScores = {};
+let selectedScenario = 0;
+
+/* ══ LANG ══ */
+function setLang(lang) {
+  currentLang = lang;
+  const isAr = lang === 'ar';
+  document.documentElement.lang = lang;
+  document.documentElement.dir = isAr ? 'rtl' : 'ltr';
+  document.body.classList.toggle('rtl', isAr);
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    const map = {'EN':'en','FR':'fr','ع':'ar'};
+    b.classList.toggle('active', map[b.textContent.trim()] === lang);
+  });
+  document.querySelectorAll('[data-key]').forEach(el => {
+    const k = el.getAttribute('data-key');
+    if(T[lang][k] !== undefined) el.innerHTML = T[lang][k];
+  });
+  document.querySelectorAll('[data-key-placeholder]').forEach(el => {
+    const k = el.getAttribute('data-key-placeholder');
+    if(T[lang][k]) el.placeholder = T[lang][k];
+  });
+  rebuildAll();
+}
+
+function toggleDark() {
+  document.body.classList.toggle('dark');
+  const btn = document.getElementById('dark-btn');
+  btn.textContent = document.body.classList.contains('dark') ? '☀️ Light' : '🌙 Dark';
+}
+
+/* ══ NAVIGATION ══ */
+function showMain(id, btn) {
+  document.querySelectorAll('.mpanel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.main-tab').forEach(b => b.classList.remove('active'));
+  document.getElementById('mpanel-'+id).classList.add('active');
+  btn.classList.add('active');
+  if(id === 'planner') renderPlanner();
+  if(id === 'journal') renderJournal();
+  if(id === 'assessment') renderAssessment();
+}
+
+function showPillar(id, btn) {
+  document.querySelectorAll('.pillar-panel').forEach(p => p.style.display = 'none');
+  document.querySelectorAll('.pillar-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('pillar-'+id).style.display = 'block';
+  btn.classList.add('active');
+}
+
+function showSubTab(id, btn, groupId) {
+  const group = document.getElementById(groupId);
+  group.querySelectorAll('.sub-panel').forEach(p => p.classList.remove('active'));
+  group.parentElement.querySelectorAll('.tab-section-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('sub-'+id).classList.add('active');
+  btn.classList.add('active');
+}
+
+/* ══ CARDS ══ */
+function buildCard(card, lang) {
+  const hasDoDont = card.dodont && card.dodont[lang];
+  const t = T[lang];
+  const tagLabel = {'tag-connection':t.tab_connection,'tag-discipline':t.tab_discipline,'tag-emotional':t.tab_emotional,'tag-islamic':t.tab_islamic}[card.tagClass] || '';
+  return `<div class="card">
+    <div class="card-head">
+      <div><div class="card-tag ${card.tagClass}">${tagLabel}</div><div class="card-title-text">${card.titles[lang]}</div></div>
+      <div class="card-arrow">›</div>
+    </div>
+    <div class="card-body"><div class="card-body-inner">
+      <p class="card-desc">${card.descs[lang]}</p>
+      <ul class="tips-list">${card.tips[lang].map(t=>`<li>${t}</li>`).join('')}</ul>
+      ${hasDoDont?`<div class="do-dont-grid">
+        <ul class="do-box"><div class="box-label">${t.do_label}</div>${card.dodont[lang].do.map(x=>`<li>${x}</li>`).join('')}</ul>
+        <ul class="dont-box"><div class="box-label">${t.dont_label}</div>${card.dodont[lang].dont.map(x=>`<li>${x}</li>`).join('')}</ul>
+      </div>`:''}
+    </div></div>
+  </div>`;
+}
+
+function rebuildGrids() {
+  ['connection','discipline','emotional','islamic'].forEach(p => {
+    const g = document.getElementById('grid-'+p);
+    if(!g) return;
+    g.innerHTML = '';
+    (CARDS[p]||[]).forEach(c => { g.innerHTML += buildCard(c, currentLang); });
+    g.querySelectorAll('.card').forEach(c => c.addEventListener('click', () => {
+      const was = c.classList.contains('open');
+      c.closest('.cards-grid').querySelectorAll('.card').forEach(x => x.classList.remove('open'));
+      if(!was) c.classList.add('open');
+    }));
+  });
+}
+
+/* ══ AGE STAGES ══ */
+function rebuildAgeGrid() {
+  const g = document.getElementById('age-grid');
+  if(!g) return;
+  const stages = AGE_STAGES[currentLang];
+  const t = T[currentLang];
+  g.innerHTML = stages.map(s => `
+    <div class="age-card">
+      <div class="age-badge ${s.badge}">${s.label}</div>
+      <h3>${s.title}</h3>
+      <p>${s.desc}</p>
+      <ul class="age-traits">${s.traits.map(tr=>`<li>${tr}</li>`).join('')}</ul>
+    </div>`).join('');
+  // Update sub-tabs content
+  ['brain_content','identity_content','peers_content'].forEach((k,i) => {
+    const ids = ['sub-brain','sub-identity','sub-peers'];
+    const el = document.getElementById(ids[i]);
+    if(el) el.querySelector('p').textContent = t[k] || '';
+  });
+}
+
+/* ══ TECHNIQUES ══ */
+function rebuildTechniques(filter) {
+  filter = filter || 'all';
+  const g = document.getElementById('techniques-grid');
+  if(!g) return;
+  const techs = TECHNIQUES[currentLang];
+  g.innerHTML = techs.map(tech => {
+    const hidden = filter !== 'all' && tech.cat !== filter ? 'hidden' : '';
+    return `<div class="technique-card ${hidden}" data-cat="${tech.cat}">
+      <div class="tech-header">
+        <div class="tech-icon ${tech.iconClass}">${tech.icon}</div>
+        <div><div class="tech-name">${tech.name}</div><div class="tech-source">${tech.source}</div></div>
+      </div>
+      <p class="tech-desc">${tech.desc}</p>
+      <ol class="tech-steps">${tech.steps.map(s=>`<li>${s}</li>`).join('')}</ol>
+    </div>`;
+  }).join('');
+}
+
+function filterTech(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.technique-card').forEach(c => {
+    c.classList.toggle('hidden', cat !== 'all' && c.dataset.cat !== cat);
+  });
+}
+
+/* ══ SCENARIOS ══ */
+function rebuildScenarios() {
+  const sel = document.getElementById('scenario-selector');
+  const dis = document.getElementById('scenario-display');
+  if(!sel || !dis) return;
+  const scns = SCENARIOS[currentLang];
+  sel.innerHTML = scns.map((s,i) => `
+    <button class="scenario-btn ${i===selectedScenario?'active':''}" onclick="selectScenario(${i},this)">
+      <span class="scn-icon">${s.icon}</span>
+      <span class="scn-title">${s.title}</span>
+      <span class="scn-sub">${s.sub}</span>
+    </button>`).join('');
+  renderScenario(selectedScenario);
+}
+
+function selectScenario(i, btn) {
+  selectedScenario = i;
+  document.querySelectorAll('.scenario-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderScenario(i);
+}
+
+function renderScenario(i) {
+  const dis = document.getElementById('scenario-display');
+  const s = SCENARIOS[currentLang][i];
+  if(!s || !dis) return;
+  const typeMap = {bad:'response-bad',ok:'response-ok',good:'response-good'};
+  const labelMap = {bad:'bad',ok:'ok',good:'good'};
+  dis.innerHTML = `<div class="scenario-box active">
+    <div class="scenario-situation">${s.situation}</div>
+    <div class="scenario-responses">${s.responses.map(r => `
+      <div class="response-option ${typeMap[r.type]}">
+        <div class="response-label ${labelMap[r.type]}">${r.label}</div>
+        <div class="response-text">${r.text}</div>
+        <div class="response-why">${r.why}</div>
+      </div>`).join('')}
+    </div>
+  </div>`;
+}
+
+/* ══ PLANNER ══ */
+function getWeekStart(offset) {
+  const d = new Date();
+  const day = d.getDay();
+  const diff = d.getDate() - day + (day===0?-6:1) + offset*7;
+  return new Date(d.setDate(diff));
+}
+
+function renderPlanner() {
+  const t = T[currentLang];
+  const ws = getWeekStart(currentWeekOffset);
+  const label = `${t.week_label} ${ws.toLocaleDateString(currentLang==='ar'?'ar-EG':currentLang==='fr'?'fr-FR':'en-GB',{month:'short',day:'numeric'})}`;
+  document.getElementById('week-label').textContent = label;
+  const grid = document.getElementById('planner-grid');
+  grid.innerHTML = '';
+  for(let i=0;i<7;i++) {
+    const d = new Date(ws); d.setDate(d.getDate()+i);
+    const key = d.toISOString().split('T')[0];
+    const today = new Date().toISOString().split('T')[0];
+    const items = plannerData[key] || [];
+    const dayDiv = document.createElement('div');
+    dayDiv.className = 'planner-day';
+    dayDiv.innerHTML = `<div class="planner-day-label">${t.days[i]}</div>
+      <div class="planner-cell ${key===today?'today':''}" onclick="openPlannerAdd('${key}','${t.days[i]}')">
+        <div class="cell-date">${d.getDate()}</div>
+        ${items.map((it,idx)=>`<div class="planner-item ${it.type||''}" onclick="event.stopPropagation();removePlannerItem('${key}',${idx})">${it.text} ×</div>`).join('')}
+      </div>`;
+    grid.appendChild(dayDiv);
+  }
+}
+
+function openPlannerAdd(key, dayLabel) {
+  selectedPlannerDay = key;
+  const area = document.getElementById('planner-add-area');
+  document.getElementById('planner-add-label').textContent = dayLabel;
+  document.getElementById('planner-input').value = '';
+  area.style.display = 'block';
+  document.getElementById('planner-input').focus();
+}
+
+function closePlannerAdd() {
+  document.getElementById('planner-add-area').style.display = 'none';
+  selectedPlannerDay = null;
+}
+
+function addPlannerItem() {
+  const val = document.getElementById('planner-input').value.trim();
+  if(!val || !selectedPlannerDay) return;
+  if(!plannerData[selectedPlannerDay]) plannerData[selectedPlannerDay] = [];
+  plannerData[selectedPlannerDay].push({text:val,type:''});
+  closePlannerAdd();
+  renderPlanner();
+}
+
+function removePlannerItem(key, idx) {
+  if(plannerData[key]) { plannerData[key].splice(idx,1); renderPlanner(); }
+}
+
+function prevWeek() { currentWeekOffset--; renderPlanner(); }
+function nextWeek() { currentWeekOffset++; renderPlanner(); }
+function clearPlanner() {
+  const ws = getWeekStart(currentWeekOffset);
+  for(let i=0;i<7;i++) {
+    const d = new Date(ws); d.setDate(d.getDate()+i);
+    delete plannerData[d.toISOString().split('T')[0]];
+  }
+  renderPlanner();
+}
+
+/* ══ JOURNAL ══ */
+function renderJournal() {
+  const prompts = JOURNAL_PROMPTS[currentLang];
+  const pc = document.getElementById('journal-prompts');
+  if(pc) pc.innerHTML = prompts.map(p=>`<button class="prompt-chip" onclick="setJournalPrompt(this)">${p}</button>`).join('');
+  const t = T[currentLang];
+  const ta = document.getElementById('journal-text');
+  if(ta) ta.placeholder = t.jour_placeholder;
+  renderJournalEntries();
+}
+
+function setJournalPrompt(btn) {
+  document.getElementById('journal-text').value = btn.textContent + '\n\n';
+  document.getElementById('journal-text').focus();
+}
+
+function saveJournalEntry() {
+  const text = document.getElementById('journal-text').value.trim();
+  if(!text) return;
+  journalEntries.unshift({text, date: new Date().toLocaleDateString(currentLang==='ar'?'ar-EG':currentLang==='fr'?'fr-FR':'en-GB',{weekday:'long',year:'numeric',month:'long',day:'numeric'})});
+  document.getElementById('journal-text').value = '';
+  renderJournalEntries();
+}
+
+function clearJournalText() { document.getElementById('journal-text').value = ''; }
+
+function renderJournalEntries() {
+  const c = document.getElementById('journal-entries');
+  if(!c) return;
+  c.innerHTML = journalEntries.map((e,i)=>`
+    <div class="journal-entry">
+      <div class="entry-date">${e.date}</div>
+      <div class="entry-text">${e.text.replace(/\n/g,'<br>')}</div>
+      <span class="entry-delete" onclick="deleteEntry(${i})">${currentLang==='ar'?'حذف':currentLang==='fr'?'Supprimer':'Delete'}</span>
+    </div>`).join('');
+}
+
+function deleteEntry(i) { journalEntries.splice(i,1); renderJournalEntries(); }
+
+/* ══ ASSESSMENT ══ */
+function renderAssessment() {
+  const qs = ASSESSMENT_QS[currentLang];
+  const c = document.getElementById('assessment-questions');
+  if(!c) return;
+  c.innerHTML = qs.map((q,qi)=>`
+    <div class="assessment-q">
+      <div class="assessment-q-text">${q.q}</div>
+      <div class="rating-row">${[1,2,3,4,5].map(v=>`
+        <button class="rating-btn ${assessmentScores[qi]===v?'selected':''}" onclick="setScore(${qi},${v},this)">${v}</button>`).join('')}
+      </div>
+      <div class="rating-labels"><span>${currentLang==='ar'?'يحتاج عمل':currentLang==='fr'?'À améliorer':'Needs work'}</span><span>${currentLang==='ar'?'ممتاز':currentLang==='fr'?'Excellent':'Excellent'}</span></div>
+    </div>`).join('');
+}
+
+function setScore(qi, v, btn) {
+  assessmentScores[qi] = v;
+  const row = btn.closest('.rating-row');
+  row.querySelectorAll('.rating-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+}
+
+function showAssessmentResults() {
+  const qs = ASSESSMENT_QS[currentLang];
+  const scores = qs.map((_,i) => assessmentScores[i] || 3);
+  const avg = scores.reduce((a,b)=>a+b,0) / scores.length;
+  const results = ASSESSMENT_RESULTS[currentLang];
+  const r = avg >= 4 ? results.high : avg >= 2.5 ? results.mid : results.low;
+  document.getElementById('result-title').textContent = r.title;
+  document.getElementById('result-text').textContent = r.text;
+  const bars = document.getElementById('result-bars');
+  bars.innerHTML = qs.map((q,i)=>`
+    <div class="result-bar-row">
+      <div class="result-bar-label">${q.dim} — ${scores[i]}/5</div>
+      <div class="result-bar-track"><div class="result-bar-fill" style="width:${Math.round(scores[i]/5*100)}%"></div></div>
+    </div>`).join('');
+  const res = document.getElementById('assessment-result');
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+/* ══ CHECKLIST ══ */
+function rebuildChecklist() {
+  const data = CHECKLIST[currentLang];
+  const t = T[currentLang];
+  const c = document.getElementById('checklist-groups');
+  if(!c) return;
+  c.innerHTML = '';
+  data.groups.forEach((group,gi) => {
+    const div = document.createElement('div');
+    div.className = 'checklist-group';
+    div.innerHTML = `<div class="group-label">${t[group.label]||group.label}</div>`;
+    group.items.forEach((item,ii) => {
+      const id = `${gi}-${ii}`;
+      const done = checkState[id];
+      const row = document.createElement('div');
+      row.className = 'check-row'+(done?' done':'');
+      row.innerHTML = `<div class="check-icon">${done?'✓':''}</div><div class="check-label">${item}</div>`;
+      row.addEventListener('click', () => {
+        checkState[id] = !checkState[id];
+        row.classList.toggle('done', checkState[id]);
+        row.querySelector('.check-icon').textContent = checkState[id]?'✓':'';
+        updateProgress();
+      });
+      div.appendChild(row);
+    });
+    c.appendChild(div);
+  });
+  updateProgress();
+}
+
+function resetChecklist() { checkState = {}; rebuildChecklist(); }
+
+function updateProgress() {
+  const total = document.querySelectorAll('.check-row').length;
+  const done = document.querySelectorAll('.check-row.done').length;
+  document.getElementById('progress-fill').style.width = total ? Math.round(done/total*100)+'%' : '0%';
+  document.getElementById('progress-text').textContent = `${done} / ${total}`;
+}
+
+/* ══ REBUILD ALL ══ */
+function rebuildAll() {
+  rebuildGrids();
+  rebuildAgeGrid();
+  rebuildTechniques('all');
+  rebuildScenarios();
+  rebuildChecklist();
+  if(document.getElementById('mpanel-planner').classList.contains('active')) renderPlanner();
+  if(document.getElementById('mpanel-journal').classList.contains('active')) renderJournal();
+  if(document.getElementById('mpanel-assessment').classList.contains('active')) renderAssessment();
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  const first = document.querySelector('.filter-btn');
+  if(first) first.classList.add('active');
+}
+
+/* ══ INIT ══ */
+rebuildAll();
+renderPlanner();
+</script>
+</body>
+</html>
